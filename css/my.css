@@ -54,20 +54,29 @@ header, main, footer, .index-card, .articles {
     z-index: 1;
 }
 
-/* ---------- 导航栏：马卡龙色（滚动后显示） ---------- */
+/* ---------- 导航栏：顶部透明，滚动后白底毛玻璃 ---------- */
+.nav-transparent {
+    background-image: none !important;
+    background-color: transparent !important;
+    box-shadow: none !important;
+}
+
 .bg-color {
-    background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%) !important;
+    background: rgba(255, 255, 255, 0.85) !important;
+    backdrop-filter: blur(12px) !important;
+    -webkit-backdrop-filter: blur(12px) !important;
+    box-shadow: 0 1px 8px rgba(0, 0, 0, 0.06) !important;
 }
 
 .text-color {
-    color: #a8edea !important;
+    color: #555 !important;
 }
 
 .progress-bar {
-    background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%) !important;
+    background: rgba(255, 255, 255, 0.85) !important;
 }
 
-/* 导航栏文字颜色 */
+/* 导航栏文字颜色 - 顶部时白底需要白色文字，滚动后深色文字 */
 header .nav-menu li a {
     color: #555 !important;
 }
@@ -75,7 +84,7 @@ header .nav-menu li a:hover {
     color: #333 !important;
 }
 header .brand-logo .logo-span {
-    color: #555 !important;
+    color: #333 !important;
     font-family: 'Noto Serif SC', 'STKaiti', 'KaiTi', serif !important;
     font-weight: 700;
     font-size: 1.5rem !important;
@@ -109,8 +118,8 @@ header .brand-logo .logo-span {
     box-sizing: border-box;
 }
 .search-input:focus {
-    border-color: #a8edea !important;
-    box-shadow: 0 0 0 3px rgba(168, 237, 234, 0.25) !important;
+    border-color: #7ec8c8 !important;
+    box-shadow: 0 0 0 3px rgba(126, 200, 200, 0.2) !important;
 }
 #searchModal .search-header .title {
     font-size: 1.4rem !important;
@@ -119,11 +128,11 @@ header .brand-logo .logo-span {
     font-weight: 600;
 }
 .search-result-list .search-result-title {
-    color: #a8edea !important;
+    color: #7ec8c8 !important;
     font-weight: 600;
 }
 .search-result-list .search-keyword {
-    background-color: rgba(168, 237, 234, 0.15) !important;
+    background-color: rgba(126, 200, 200, 0.15) !important;
     color: #7c8ea0 !important;
 }
 .search-result-list li {
@@ -161,23 +170,10 @@ header .brand-logo .logo-span {
     margin: 0 auto;
 }
 
-/* ---------- 文章区域标题 ---------- */
+/* ---------- 文章区域间距 ---------- */
 .articles {
     margin-top: 10px;
-    padding-top: 40px;
-    position: relative;
-}
-.articles::before {
-    content: '✨ 最新动态';
-    display: block;
-    text-align: center;
-    font-size: 1.5rem;
-    font-weight: 700;
-    color: #333;
-    margin-bottom: 25px;
-    padding-top: 10px;
-    position: relative;
-    z-index: 2;
+    padding-top: 20px;
 }
 
 /* ---------- 卡片美化 ---------- */
@@ -218,11 +214,11 @@ footer .social-link {
     background: transparent;
 }
 ::-webkit-scrollbar-thumb {
-    background: rgba(168, 237, 234, 0.4);
+    background: rgba(126, 200, 200, 0.4);
     border-radius: 3px;
 }
 ::-webkit-scrollbar-thumb:hover {
-    background: rgba(168, 237, 234, 0.6);
+    background: rgba(126, 200, 200, 0.6);
 }
 
 /* ---------- 响应式适配 ---------- */
