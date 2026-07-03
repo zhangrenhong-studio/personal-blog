@@ -194,6 +194,18 @@ header .brand-logo .logo-span {
     padding-top: 20px;
 }
 
+/* ---------- 标签 chip 颜色修正 ---------- */
+.article-tags .chip.bg-color {
+    background: rgba(255, 255, 255, 0.7) !important;
+    color: #555 !important;
+    backdrop-filter: blur(4px);
+    border: 1px solid rgba(0, 0, 0, 0.06);
+}
+.article-tags .chip.bg-color:hover {
+    background: rgba(255, 255, 255, 0.95) !important;
+    color: #333 !important;
+}
+
 /* ---------- 卡片美化 ---------- */
 .card {
     border-radius: 12px !important;
