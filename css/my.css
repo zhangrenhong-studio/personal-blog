@@ -60,6 +60,9 @@ header, main, footer, .index-card, .articles {
     background-color: transparent !important;
     box-shadow: none !important;
 }
+.nav-transparent .nav-wrapper {
+    box-shadow: none !important;
+}
 
 .bg-color {
     background: rgba(255, 255, 255, 0.85) !important;
