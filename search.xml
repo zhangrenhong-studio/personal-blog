@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search> 
+  
+  
+    
+    <entry>
+      <title>欢迎来到我的博客</title>
+      <link href="/personal-blog/2025/07/03/hello-world/"/>
+      <url>/personal-blog/2025/07/03/hello-world/</url>
+      
+        <content type="html"><![CDATA[<h2 id="嘿，欢迎来玩-👋"><a href="#嘿，欢迎来玩-👋" class="headerlink" title="嘿，欢迎来玩 👋"></a>嘿，欢迎来玩 👋</h2><p>我是小红，一个在教育行业摸爬滚打的人。</p><p>不是技术出身，也没有系统学过编程。工作后接触到了 AI，发现这玩意儿真好用——脑子里的想法，跟 AI 聊着聊着，就变成了能用的小产品。</p><p>慢慢地，AI 不只是工具了，它给了我底气。以前觉得”这个我做不了”，现在觉得”要不试试？”</p><h3 id="我在做什么"><a href="#我在做什么" class="headerlink" title="我在做什么"></a>我在做什么</h3><p>在做人工智能教育相关的产品。具体是什么，后面慢慢聊。</p><h3 id="我会在这里分享什么"><a href="#我会在这里分享什么" class="headerlink" title="我会在这里分享什么"></a>我会在这里分享什么</h3><ul><li>💡 <strong>小产品</strong> — 用 AI 做的各种有意思的项目</li><li>🎬 <strong>视频</strong> — 以后会上传一些</li><li>✍️ <strong>文章</strong> — 想到什么写什么</li><li>🔧 <strong>折腾记录</strong> — 技术小白的探索之路</li></ul><h3 id="联系我"><a href="#联系我" class="headerlink" title="联系我"></a>联系我</h3><p>如果你也对 AI + 教育感兴趣，欢迎来聊！</p><hr><blockquote><p>不是会了才去做，是做了才会。🚀</p></blockquote>]]></content>
+      
+      
+      <categories>
+          
+          <category> 生活 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 博客 </tag>
+            
+            <tag> 个人 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>英语口语练习平台</title>
+      <link href="/personal-blog/2025/06/28/english-speaking-platform/"/>
+      <url>/personal-blog/2025/06/28/english-speaking-platform/</url>
+      
+        <content type="html"><![CDATA[<p>🔗 <strong>在线体验：</strong> <a href="https://zrh-iris.github.io/english-oral-practice/">点击访问</a></p><h2 id="背景"><a href="#背景" class="headerlink" title="背景"></a>背景</h2><p>很多人想练英语口语，但没有趁手的工具。于是用 AI 帮忙做了这个。</p><h2 id="功能"><a href="#功能" class="headerlink" title="功能"></a>功能</h2><ul><li>📖 句子跟读与发音对比</li><li>🎭 生活场景模拟对话</li><li>📊 学习进度追踪</li><li>📱 手机端也能用</li></ul><h2 id="技术"><a href="#技术" class="headerlink" title="技术"></a>技术</h2><p>AI 生成的前端代码，浏览器原生语音识别，GitHub Pages 免费托管。</p><hr><blockquote><p>想法到产品，中间只差一个 AI。✨</p></blockquote>]]></content>
+      
+      
+      <categories>
+          
+          <category> 技术 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 教育技术 </tag>
+            
+            <tag> 前端开发 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>节点引擎场景</title>
+      <link href="/personal-blog/2025/06/25/node-engine-scenes/"/>
+      <url>/personal-blog/2025/06/25/node-engine-scenes/</url>
+      
+        <content type="html"><![CDATA[<p>🔗 <strong>在线体验：</strong> <a href="https://zrh-iris.github.io/node-era-scenarios/">点击访问</a></p><h2 id="是什么"><a href="#是什么" class="headerlink" title="是什么"></a>是什么</h2><p>一个场景化互动学习工具。把知识放进场景里，学生在解决问题的过程中学习。</p><h2 id="为什么做"><a href="#为什么做" class="headerlink" title="为什么做"></a>为什么做</h2><p>情境记忆比死记硬背有效得多。在具体场景中学到的知识，记忆保持率是传统方式的好几倍。</p><h2 id="亮点"><a href="#亮点" class="headerlink" title="亮点"></a>亮点</h2><ul><li>🔀 分支剧情 — 不同选择不同结果</li><li>🎯 即时反馈</li><li>🎨 卡片式界面</li></ul><h2 id="技术"><a href="#技术" class="headerlink" title="技术"></a>技术</h2><p>全部由 AI 辅助生成，纯前端实现。</p><hr><blockquote><p>技术小白的第一步，就是敢点”生成”。🚀</p></blockquote>]]></content>
+      
+      
+      <categories>
+          
+          <category> 技术 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 教育技术 </tag>
+            
+            <tag> 互动学习 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+  
+  
+</search>
