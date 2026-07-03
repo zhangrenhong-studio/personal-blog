@@ -79,19 +79,34 @@ header, main, footer, .index-card, .articles {
     background: rgba(255, 255, 255, 0.85) !important;
 }
 
-/* 导航栏文字颜色 - 顶部时白底需要白色文字，滚动后深色文字 */
+/* 导航栏文字颜色 - 顶部透明时白色，滚动后深色 */
 header .nav-menu li a {
-    color: #555 !important;
+    color: rgba(255, 255, 255, 0.9) !important;
 }
 header .nav-menu li a:hover {
+    color: #fff !important;
+}
+.nav-transparent ~ .nav-menu li a,
+header .nav-menu li a {
+    color: rgba(255, 255, 255, 0.9) !important;
+}
+/* 滚动后文字变深色 */
+.bg-color:not(.nav-transparent) .nav-menu li a {
+    color: #555 !important;
+}
+.bg-color:not(.nav-transparent) .nav-menu li a:hover {
     color: #333 !important;
 }
+/* logo 文字 */
 header .brand-logo .logo-span {
-    color: #333 !important;
+    color: #fff !important;
     font-family: 'Noto Serif SC', 'STKaiti', 'KaiTi', serif !important;
     font-weight: 700;
     font-size: 1.5rem !important;
     letter-spacing: 2px;
+}
+.bg-color:not(.nav-transparent) .brand-logo .logo-span {
+    color: #333 !important;
 }
 
 /* ---------- 标题字体 ---------- */
@@ -190,18 +205,26 @@ header .brand-logo .logo-span {
     box-shadow: 0 12px 40px rgba(0, 0, 0, 0.12) !important;
 }
 
-/* ---------- 页脚居中 ---------- */
+/* ---------- 页脚居中 + 灰色文字 ---------- */
 footer {
     text-align: center;
 }
 footer .copy-right {
     text-align: center !important;
     float: none !important;
+    color: #999 !important;
+    font-size: 0.9rem;
+}
+footer .copy-right a {
+    color: #888 !important;
 }
 footer .social-link {
     text-align: center !important;
     float: none !important;
     margin-top: 10px;
+}
+footer .social-link a {
+    color: #aaa !important;
 }
 
 /* ---------- 轮播过渡更自然 ---------- */
