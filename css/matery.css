@@ -34,7 +34,11 @@
 }
 
 body {
-    background-color: #eaeaea;
+    background-color: #f5f7fa;
+    background-image: 
+        radial-gradient(at 20% 20%, rgba(102, 126, 234, 0.08) 0, transparent 50%),
+        radial-gradient(at 80% 80%, rgba(240, 147, 251, 0.08) 0, transparent 50%),
+        radial-gradient(at 50% 50%, rgba(76, 191, 48, 0.05) 0, transparent 70%);
     margin: 0;
     color: #34495e;
     overflow-x: hidden;
