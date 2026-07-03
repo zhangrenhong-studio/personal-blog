@@ -245,11 +245,12 @@ mark {
 }
 
 .bg-color {
-    background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(12px);
 }
 
 .text-color {
-    color: #4facfe !important;
+    color: #555 !important;
 }
 
 .white-color {
