@@ -442,9 +442,24 @@ footer .social-link a {
     color: #aaa !important;
 }
 
-/* ---------- 轮播过渡更自然 ---------- */
+/* ---------- 轮播过渡：平滑交叉淡入淡出 ---------- */
 .carousel.carousel-slider .carousel-item {
     transition: opacity 0.8s ease-in-out !important;
+}
+/* 使轮播图交叉淡入淡出而非滑动 */
+.carousel.carousel-slider .carousel-item {
+    position: absolute !important;
+    left: 0 !important;
+    top: 0 !important;
+    width: 100% !important;
+    height: 100% !important;
+    opacity: 0 !important;
+    transform: none !important;
+    z-index: 0;
+}
+.carousel.carousel-slider .carousel-item.active {
+    opacity: 1 !important;
+    z-index: 1;
 }
 
 /* ---------- 自定义滚动条 ---------- */
