@@ -669,14 +669,41 @@
 
 
 <script>
-// 修复 AOS 动画库把作品卡片设为 absolute 定位的问题
-setTimeout(function() {
-    document.querySelectorAll('.article').forEach(function(el) {
-        el.style.position = '';
-        el.style.left = '';
-        el.style.top = '';
+// 修复 Masonry 把作品卡片设为 absolute 定位的问题
+(function() {
+    function fixArticleLayout() {
+        var articles = document.getElementById('articles');
+        if (!articles) return;
+        
+        // 1. 先尝试销毁 Masonry 实例
+        if (articles.masonry) {
+            try { articles.masonry.destroy(); } catch(e) {}
+        }
+        
+        // 2. 清除所有卡片的内联定位样式，让 CSS flexbox 接管
+        document.querySelectorAll('.article').forEach(function(el) {
+            el.style.position = '';
+            el.style.left = '';
+            el.style.top = '';
+            el.style.width = '';
+            el.style.transform = '';
+        });
+        
+        // 3. 修复文章容器高度
+        articles.style.height = '';
+        articles.style.position = '';
+    }
+    
+    // 立即执行
+    fixArticleLayout();
+    // 延迟执行（等 Masonry 加载完成）
+    setTimeout(fixArticleLayout, 300);
+    setTimeout(fixArticleLayout, 800);
+    // 页面完全加载后再执行一次
+    window.addEventListener('load', function() {
+        setTimeout(fixArticleLayout, 100);
     });
-}, 500);
+})();
 </script>
 
 
