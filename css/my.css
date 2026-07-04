@@ -197,12 +197,15 @@ header .brand-logo .logo-span {
 .article-row {
     display: flex !important;
     flex-wrap: wrap !important;
+    margin-top: 30px !important;
 }
 .article {
     position: relative !important;
     left: auto !important;
     top: auto !important;
-    margin-bottom: 28px;
+    width: 48% !important;
+    margin: 1% !important;
+    margin-bottom: 0 !important;
 }
 
 /* ---------- 标签 chip 颜色修正（首页 + 详情页通用） ---------- */
