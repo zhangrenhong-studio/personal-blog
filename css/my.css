@@ -190,13 +190,19 @@ header .brand-logo .logo-span {
 
 /* ---------- 文章区域间距 ---------- */
 .articles {
-    margin-top: 10px;
-    padding-top: 20px;
+    margin-top: 20px;
+    padding-top: 0;
 }
-/* 防止 AOS 动画把卡片变成 absolute 定位 */
-.article.aos-init,
-.article[data-aos] {
+/* 覆盖 Masonry 的 absolute 定位，使用 flexbox 布局 */
+.article-row {
+    display: flex !important;
+    flex-wrap: wrap !important;
+}
+.article {
     position: relative !important;
+    left: auto !important;
+    top: auto !important;
+    margin-bottom: 28px;
 }
 
 /* ---------- 标签 chip 颜色修正（首页 + 详情页通用） ---------- */
