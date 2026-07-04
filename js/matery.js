@@ -57,10 +57,10 @@ $(function () {
         fixStyles();
     });
 
-    /*初始化瀑布流布局*/
-    $('#articles').masonry({
-        itemSelector: '.article'
-    });
+    /*初始化瀑布流布局 (已禁用 - 改用 CSS flexbox 布局，避免 absolute 定位遮挡标题)*/
+    // $('#articles').masonry({
+    //     itemSelector: '.article'
+    // });
 
     AOS.init({
         easing: 'ease-in-out-sine',
