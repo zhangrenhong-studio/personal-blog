@@ -194,16 +194,38 @@ header .brand-logo .logo-span {
     padding-top: 20px;
 }
 
-/* ---------- 标签 chip 颜色修正 ---------- */
-.article-tags .chip.bg-color {
+/* ---------- 标签 chip 颜色修正（首页 + 详情页通用） ---------- */
+.chip.bg-color {
     background: rgba(255, 255, 255, 0.7) !important;
     color: #555 !important;
     backdrop-filter: blur(4px);
     border: 1px solid rgba(0, 0, 0, 0.06);
 }
-.article-tags .chip.bg-color:hover {
+.chip.bg-color:hover {
     background: rgba(255, 255, 255, 0.95) !important;
     color: #333 !important;
+}
+
+/* ---------- 返回按钮 ---------- */
+.back-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 8px 18px;
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(8px);
+    border-radius: 20px;
+    color: #555;
+    font-size: 0.95rem;
+    text-decoration: none;
+    border: 1px solid rgba(0, 0, 0, 0.06);
+    transition: all 0.3s;
+}
+.back-btn:hover {
+    background: rgba(255, 255, 255, 0.95);
+    color: #333;
+    transform: translateX(-3px);
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
 }
 
 /* ---------- 卡片美化 ---------- */
@@ -259,6 +281,137 @@ footer .social-link a {
     background: rgba(126, 200, 200, 0.6);
 }
 
+/* ---------- 个人介绍模块 ---------- */
+.intro-card-wrapper {
+    margin-top: 20px !important;
+}
+
+.intro-section {
+    padding: 10px 0;
+}
+
+.intro-header {
+    margin-bottom: 25px;
+}
+
+.intro-avatar img {
+    width: 80px !important;
+    height: 80px !important;
+    border: 3px solid rgba(126, 200, 200, 0.3);
+    box-shadow: 0 4px 20px rgba(126, 200, 200, 0.2);
+}
+
+.intro-title {
+    font-size: 1.6rem !important;
+    font-weight: 700;
+    color: #333;
+    margin: 15px 0 5px !important;
+}
+
+.intro-subtitle {
+    font-size: 1.05rem;
+    color: #888;
+    margin: 0;
+}
+
+.intro-body {
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.intro-body p {
+    font-size: 1rem;
+    line-height: 1.8;
+    color: #666;
+    margin: 8px 0;
+}
+
+.intro-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    margin: 25px 0;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.intro-card {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 14px 16px;
+    background: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(8px);
+    border-radius: 12px;
+    border: 1px solid rgba(0, 0, 0, 0.04);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.intro-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
+}
+
+.intro-card-icon {
+    font-size: 1.5rem;
+    flex-shrink: 0;
+}
+
+.intro-card-text {
+    text-align: left;
+}
+
+.intro-card-text strong {
+    display: block;
+    font-size: 0.95rem;
+    color: #333;
+}
+
+.intro-card-text span {
+    font-size: 0.82rem;
+    color: #999;
+}
+
+.intro-quote {
+    margin-top: 20px;
+}
+
+.intro-quote blockquote {
+    font-size: 1rem;
+    color: #888;
+    border-left: 3px solid rgba(126, 200, 200, 0.4);
+    padding-left: 15px;
+    font-style: italic;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+/* ---------- 我的作品标题 ---------- */
+.works-section-title {
+    text-align: center;
+    padding: 20px 0 10px;
+}
+
+.works-section-title h2 {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: #333;
+    margin: 0 0 8px !important;
+}
+
+.works-section-title h2 i {
+    color: rgba(126, 200, 200, 0.8);
+    margin-right: 6px;
+}
+
+.works-section-title p {
+    font-size: 0.95rem;
+    color: #999;
+    margin: 0;
+}
+
 /* ---------- 响应式适配 ---------- */
 @media only screen and (max-width: 601px) {
     .articles::before {
@@ -266,5 +419,14 @@ footer .social-link a {
     }
     #searchModal .modal-content {
         padding: 20px !important;
+    }
+    .intro-cards {
+        grid-template-columns: 1fr;
+    }
+    .intro-title {
+        font-size: 1.3rem !important;
+    }
+    .works-section-title h2 {
+        font-size: 1.3rem;
     }
 }
