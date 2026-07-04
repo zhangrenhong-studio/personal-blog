@@ -668,6 +668,17 @@
 
 
 
+<script>
+// 修复 AOS 动画库把作品卡片设为 absolute 定位的问题
+document.addEventListener('DOMContentLoaded', function() {
+    document.querySelectorAll('.article').forEach(function(el) {
+        el.style.position = '';
+        el.style.left = '';
+        el.style.top = '';
+    });
+});
+</script>
+
 
     <footer class="page-footer bg-color">
     
