@@ -393,7 +393,8 @@ footer .social-link a {
 .works-section-title.aos-init,
 .works-section-title[data-aos] {
     text-align: center;
-    padding: 20px 0 10px;
+    padding: 30px 0 20px;
+    margin-top: 10px;
     opacity: 1 !important;
     transform: none !important;
 }
