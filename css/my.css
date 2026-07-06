@@ -495,3 +495,323 @@ footer .social-link a {
         font-size: 1.3rem;
     }
 }
+
+/* ============================================
+   作品详情页 - 高级设计
+   ============================================ */
+
+/* ---------- 封面区域：暗色渐变覆盖 ---------- */
+.post-cover {
+    min-height: 300px !important;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.post-cover::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 120px;
+    background: linear-gradient(transparent, #faf8f5);
+    pointer-events: none;
+}
+.post-cover .brand h1 {
+    font-family: 'Noto Serif SC', 'STKaiti', 'KaiTi', serif !important;
+    font-size: 2rem !important;
+    font-weight: 700 !important;
+    color: #fff !important;
+    text-shadow: 0 2px 30px rgba(0,0,0,0.3);
+    letter-spacing: 2px;
+}
+
+/* ---------- 返回按钮：固定在顶部 ---------- */
+.back-btn-wrapper {
+    margin: 0 0 15px;
+}
+.back-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 22px;
+    background: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-radius: 50px;
+    color: #555;
+    font-size: 0.9rem;
+    text-decoration: none;
+    border: 1px solid rgba(0, 0, 0, 0.06);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.04);
+    font-weight: 500;
+    letter-spacing: 0.5px;
+}
+.back-btn i {
+    font-size: 0.85rem;
+    transition: transform 0.3s;
+}
+.back-btn:hover {
+    background: #fff;
+    color: #333;
+    transform: translateX(-4px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    border-color: rgba(126, 200, 200, 0.15);
+}
+.back-btn:hover i {
+    transform: translateX(-2px);
+}
+
+/* ---------- 文章卡片区域 ---------- */
+#artDetail {
+    margin-top: -40px;
+    position: relative;
+    z-index: 2;
+}
+#artDetail .card {
+    border-radius: 20px !important;
+    border: none !important;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.06) !important;
+    overflow: hidden;
+    background: #fff !important;
+}
+#artDetail .card:hover {
+    box-shadow: 0 8px 40px rgba(0, 0, 0, 0.08) !important;
+}
+
+/* ---------- 文章信息头部 ---------- */
+#artDetail .article-info {
+    padding: 30px 32px 20px !important;
+}
+#artDetail .tag-cate {
+    margin-bottom: 15px;
+}
+#artDetail .article-tag {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+}
+#artDetail .article-tag .chip {
+    background: rgba(126, 200, 200, 0.08) !important;
+    color: #7ec8c8 !important;
+    border: 1px solid rgba(126, 200, 200, 0.15);
+    border-radius: 8px !important;
+    font-size: 0.82rem;
+    padding: 2px 14px;
+    height: auto;
+    line-height: 28px;
+}
+#artDetail .article-tag .chip:hover {
+    background: rgba(126, 200, 200, 0.15) !important;
+}
+
+#artDetail .post-cate {
+    font-size: 0.85rem;
+    color: #999;
+}
+#artDetail .post-cate a {
+    color: #7ec8c8 !important;
+    font-weight: 500;
+}
+
+/* ---------- 日期信息 ---------- */
+#artDetail .post-info {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    padding-top: 4px;
+}
+#artDetail .post-date {
+    color: #aaa !important;
+    font-size: 0.85rem;
+}
+#artDetail .post-date i {
+    margin-right: 4px;
+}
+
+/* ---------- 分割线 ---------- */
+#artDetail hr {
+    margin: 0 32px;
+    border: none;
+    border-top: 1px solid #f0f0f0;
+}
+
+/* ---------- 文章内容 ---------- */
+#artDetail .article-card-content {
+    padding: 28px 32px !important;
+}
+#articleContent {
+    font-size: 1rem;
+    line-height: 1.9;
+    color: #444;
+}
+#articleContent h2 {
+    font-family: 'Noto Serif SC', 'STKaiti', 'KaiTi', serif !important;
+    font-size: 1.4rem !important;
+    font-weight: 700 !important;
+    color: #333 !important;
+    margin: 32px 0 16px !important;
+    padding-bottom: 10px;
+    border-bottom: 2px solid rgba(126, 200, 200, 0.12);
+}
+#articleContent h3 {
+    font-family: 'Noto Serif SC', 'STKaiti', 'KaiTi', serif !important;
+    font-size: 1.15rem !important;
+    font-weight: 600 !important;
+    color: #444 !important;
+    margin: 24px 0 12px !important;
+}
+#articleContent p {
+    margin: 12px 0;
+    line-height: 1.9;
+}
+#articleContent a {
+    color: #7ec8c8 !important;
+    text-decoration: none;
+    border-bottom: 1px solid rgba(126, 200, 200, 0.2);
+    transition: border-color 0.2s;
+}
+#articleContent a:hover {
+    border-bottom-color: #7ec8c8;
+}
+#articleContent ul, #articleContent ol {
+    padding-left: 24px;
+}
+#articleContent li {
+    margin: 6px 0;
+    line-height: 1.8;
+}
+#articleContent blockquote {
+    border-left: 3px solid rgba(126, 200, 200, 0.3);
+    padding: 12px 20px;
+    margin: 20px 0;
+    background: rgba(126, 200, 200, 0.03);
+    border-radius: 0 8px 8px 0;
+    color: #666;
+    font-style: italic;
+}
+#articleContent strong {
+    color: #333;
+    font-weight: 600;
+}
+#articleContent hr {
+    margin: 28px 0;
+    border: none;
+    border-top: 1px solid #eee;
+}
+
+/* ---------- 底部操作按钮 ---------- */
+#articleContent .btn {
+    border-radius: 50px !important;
+    padding: 0 32px !important;
+    height: 46px !important;
+    line-height: 46px !important;
+    font-size: 0.95rem !important;
+    font-weight: 600 !important;
+    letter-spacing: 1px;
+    box-shadow: 0 4px 20px rgba(126, 200, 200, 0.2) !important;
+    transition: all 0.3s !important;
+}
+#articleContent .btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 25px rgba(126, 200, 200, 0.35) !important;
+}
+
+/* ---------- 标签/分享底部 ---------- */
+.tag_share {
+    margin: 20px 32px 0 !important;
+    padding: 0 0 20px !important;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.tag_share .article-tag .chip {
+    background: rgba(126, 200, 200, 0.06) !important;
+    color: #999 !important;
+    border: 1px solid rgba(0, 0, 0, 0.04);
+    border-radius: 8px !important;
+    font-size: 0.8rem;
+    height: auto;
+    line-height: 26px;
+    padding: 0 12px;
+}
+
+/* ---------- 上一篇/下一篇 ---------- */
+#prenext-posts {
+    margin-top: -10px;
+    margin-bottom: 30px;
+}
+#prenext-posts .card {
+    border-radius: 16px !important;
+    border: 1px solid #f0f0f0 !important;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.03) !important;
+}
+#prenext-posts .article-badge {
+    font-size: 0.8rem;
+    color: #aaa;
+}
+
+/* ---------- TOC 侧栏 ---------- */
+.toc-widget {
+    border-radius: 16px !important;
+    border: 1px solid #f0f0f0 !important;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.03) !important;
+    padding: 20px !important;
+    margin-top: -40px;
+    position: relative;
+    z-index: 2;
+}
+.toc-title {
+    font-size: 0.95rem !important;
+    font-weight: 600 !important;
+    color: #555 !important;
+    margin-bottom: 12px !important;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #f0f0f0;
+}
+.toc-title i {
+    color: #7ec8c8;
+}
+.toc-widget .toc-list {
+    margin: 0 !important;
+}
+.toc-widget .toc-link {
+    color: #888 !important;
+    font-size: 0.85rem !important;
+    line-height: 1.8;
+    transition: color 0.2s;
+}
+.toc-widget .toc-link:hover {
+    color: #7ec8c8 !important;
+}
+.toc-widget .toc-link.is-active-link {
+    color: #7ec8c8 !important;
+    font-weight: 600;
+}
+
+/* ---------- 响应式：手机适配 ---------- */
+@media only screen and (max-width: 601px) {
+    .post-cover {
+        min-height: 200px !important;
+    }
+    .post-cover .brand h1 {
+        font-size: 1.4rem !important;
+    }
+    #artDetail .article-info {
+        padding: 20px !important;
+    }
+    #artDetail .article-card-content {
+        padding: 20px !important;
+    }
+    #artDetail hr {
+        margin: 0 20px;
+    }
+    .tag_share {
+        margin: 12px 20px 0 !important;
+    }
+    #articleContent h2 {
+        font-size: 1.2rem !important;
+    }
+}
+

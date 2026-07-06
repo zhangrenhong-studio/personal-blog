@@ -48,7 +48,7 @@
 <link rel="stylesheet" type="text/css" href="/personal-blog/libs/animate/animate.min.css">
 <link rel="stylesheet" type="text/css" href="/personal-blog/libs/lightGallery/css/lightgallery.min.css">
 <link rel="stylesheet" type="text/css" href="/personal-blog/css/matery.css?v=20260704a">
-<link rel="stylesheet" type="text/css" href="/personal-blog/css/my.css?v=20260705c">
+<link rel="stylesheet" type="text/css" href="/personal-blog/css/my.css?v=20260706b">
 <link rel="stylesheet" type="text/css" href="/personal-blog/css/dark.css" media="none" onload="if(media!='all')media='all'">
 
 
@@ -84,13 +84,35 @@
 <a href="#" data-target="mobile-nav" class="sidenav-trigger button-collapse"><i class="fas fa-bars"></i></a>
 <ul class="right nav-menu">
   
-  <li class="hide-on-med-and-down nav-item">
+<li class="hide-on-med-and-down nav-item">
     
     <a href="/personal-blog/" class="waves-effect waves-light">
       
       <i class="fas fa-home" style="zoom: 0.6;"></i>
       
       <span>首页</span>
+    </a>
+    
+  </li>
+  
+<li class="hide-on-med-and-down nav-item">
+    
+    <a href="/personal-blog/about" class="waves-effect waves-light">
+      
+      <i class="fas fa-user-circle" style="zoom: 0.6;"></i>
+      
+      <span>关于</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/personal-blog/works" class="waves-effect waves-light">
+      
+      <i class="fas fa-rocket" style="zoom: 0.6;"></i>
+      
+      <span>作品</span>
     </a>
     
   </li>
@@ -117,49 +139,18 @@
     
   </li>
   
-  <li class="hide-on-med-and-down nav-item">
-    
-    <a href="/personal-blog/archives" class="waves-effect waves-light">
-      
-      <i class="fas fa-archive" style="zoom: 0.6;"></i>
-      
-      <span>归档</span>
-    </a>
-    
-  </li>
-  
-  <li class="hide-on-med-and-down nav-item">
-    
-    <a href="/personal-blog/about" class="waves-effect waves-light">
-      
-      <i class="fas fa-user-circle" style="zoom: 0.6;"></i>
-      
-      <span>关于</span>
-    </a>
-    
-  </li>
-  
-  <li class="hide-on-med-and-down nav-item">
-    
-    <a href="/personal-blog/works" class="waves-effect waves-light">
-      
-      <i class="fas fa-rocket" style="zoom: 0.6;"></i>
-      
-      <span>作品</span>
-    </a>
-    
-  </li>
-  
-  <li>
+<li>
     <a href="#searchModal" class="modal-trigger waves-effect waves-light">
       <i id="searchIcon" class="fas fa-search" title="搜索" style="zoom: 0.85;"></i>
     </a>
   </li>
-  <li>
+  
+<li>
     <a href="javascript:;" class="waves-effect waves-light" onclick="switchNightMode()" title="深色/浅色模式" >
       <i id="sum-moon-icon" class="fas fa-sun" style="zoom: 0.85;"></i>
     </a>
   </li>
+
 </ul>
 
 
@@ -177,7 +168,7 @@
 
     <ul class="menu-list mobile-menu-list">
         
-        <li class="m-nav-item">
+<li class="m-nav-item">
 	  
 		<a href="/personal-blog/" class="waves-effect waves-light">
 			
@@ -188,38 +179,8 @@
           
         </li>
         
-        <li class="m-nav-item">
+<li class="m-nav-item">
 	  
-		<a href="/personal-blog/tags" class="waves-effect waves-light">
-			
-			    <i class="fa-fw fas fa-tags"></i>
-			
-			标签
-		</a>
-          
-        </li>
-        
-        <li class="m-nav-item">
-	  
-		<a href="/personal-blog/categories" class="waves-effect waves-light">
-			
-			    <i class="fa-fw fas fa-bookmark"></i>
-			
-			分类
-		</a>
-          
-        </li>
-        
-        <li class="m-nav-item">
-	  
-		<a href="/personal-blog/archives" class="waves-effect waves-light">
-			
-			    <i class="fa-fw fas fa-archive"></i>
-			
-			归档
-		</a>
-          
-        </li>
         
         <li class="m-nav-item">
 	  
@@ -232,7 +193,7 @@
           
         </li>
         
-        <li class="m-nav-item">
+<li class="m-nav-item">
 	  
 		<a href="/personal-blog/works" class="waves-effect waves-light">
 			
@@ -243,8 +204,30 @@
           
         </li>
         
+<li class="m-nav-item">
+	  
+		<a href="/personal-blog/tags" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-tags"></i>
+			
+			标签
+		</a>
+          
+        </li>
         
-    </ul>
+<li class="m-nav-item">
+	  
+		<a href="/personal-blog/categories" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-bookmark"></i>
+			
+			分类
+		</a>
+          
+        </li>
+        
+    
+</ul>
 </div>
 
 
@@ -280,9 +263,9 @@
     <div class="row">
     <div id="main-content" class="col s12 m12 l9">
         <!-- 返回按钮 -->
-<div class="container" style="margin-top: 15px; margin-bottom: -10px;">
-    <a href="javascript:history.back()" class="back-btn">
-        <i class="fas fa-arrow-left"></i> 返回
+<div class="back-btn-wrapper">
+    <a href="/personal-blog/works/" class="back-btn">
+        <i class="fas fa-arrow-left"></i> 返回作品
     </a>
 </div>
 
@@ -353,7 +336,6 @@
 <li>🎯 即时反馈</li>
 <li>🎨 卡片式界面</li>
 </ul>
-<h2 id="技术"><a href="#技术" class="headerlink" title="技术"></a>技术</h2><p>全部由 AI 辅助生成，纯前端实现。</p>
 <hr>
 <blockquote>
 <p>技术小白的第一步，就是敢点"生成"。🚀</p>
@@ -372,167 +354,9 @@
 
 
 
-            <div class="tag_share" style="display: block;">
-                <div class="post-meta__tag-list" style="display: inline-block;">
-                    
-                        <div class="article-tag">
-                            
-                                <a href="/personal-blog/tags/%E6%95%99%E8%82%B2%E6%8A%80%E6%9C%AF/">
-                                    <span class="chip bg-color">教育技术</span>
-                                </a>
-                            
-                                <a href="/personal-blog/tags/%E4%BA%92%E5%8A%A8%E5%AD%A6%E4%B9%A0/">
-                                    <span class="chip bg-color">互动学习</span>
-                                </a>
-                            
-                        </div>
-                    
-                </div>
-                <div class="post_share" style="zoom: 80%; width: fit-content; display: inline-block; float: right; margin: -0.15rem 0;">
-                    <link rel="stylesheet" type="text/css" href="/personal-blog/libs/share/css/share.min.css">
-<div id="article-share">
 
-    
-
-    
-
-</div>
-
-                </div>
-            </div>
-            
         </div>
     </div>
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-<article id="prenext-posts" class="prev-next articles">
-    <div class="row article-row">
-        
-        <div class="article col s12 m6" data-aos="fade-up">
-            <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
-            <div class="card">
-                <a href="/personal-blog/2025/06/28/english-speaking-platform/">
-                    <div class="card-image">
-                        
-                        
-                        <img src="/personal-blog/medias/banner/0.jpg" class="responsive-img" alt="英语口语练习平台">
-                        
-                        <span class="card-title">英语口语练习平台</span>
-                    </div>
-                </a>
-                <div class="card-content article-content">
-                    <div class="summary block-with-text">
-                        
-                            
-                        
-                    </div>
-                    <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2025-06-28
-                        </span>
-                        <span class="publish-author">
-                            
-                            <i class="fas fa-bookmark fa-fw icon-category"></i>
-                            
-                            <a href="/personal-blog/categories/%E6%8A%80%E6%9C%AF/" class="post-category">
-                                    技术
-                                </a>
-                            
-                            
-                        </span>
-                    </div>
-                </div>
-                
-                <div class="card-action article-tags">
-                    
-                    <a href="/personal-blog/tags/%E6%95%99%E8%82%B2%E6%8A%80%E6%9C%AF/">
-                        <span class="chip bg-color">教育技术</span>
-                    </a>
-                    
-                    <a href="/personal-blog/tags/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/">
-                        <span class="chip bg-color">前端开发</span>
-                    </a>
-                    
-                </div>
-                
-            </div>
-        </div>
-        
-        
-        <div class="article col s12 m6" data-aos="fade-up">
-            <div class="article-badge right-badge text-color">
-                本篇&nbsp;<i class="far fa-dot-circle"></i>
-            </div>
-            <div class="card">
-                <a href="/personal-blog/2025/06/25/node-engine-scenes/">
-                    <div class="card-image">
-                        
-                        
-                        <img src="/personal-blog/medias/banner/1.jpg" class="responsive-img" alt="节点引擎场景">
-                        
-                        <span class="card-title">节点引擎场景</span>
-                    </div>
-                </a>
-                <div class="card-content article-content">
-                    <div class="summary block-with-text">
-                        
-                            
-                        
-                    </div>
-                    <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2025-06-25
-                            </span>
-                        <span class="publish-author">
-                            
-                            <i class="fas fa-bookmark fa-fw icon-category"></i>
-                            
-                            <a href="/personal-blog/categories/%E6%8A%80%E6%9C%AF/" class="post-category">
-                                    技术
-                                </a>
-                            
-                            
-                        </span>
-                    </div>
-                </div>
-
-                
-                <div class="card-action article-tags">
-                    
-                    <a href="/personal-blog/tags/%E6%95%99%E8%82%B2%E6%8A%80%E6%9C%AF/">
-                        <span class="chip bg-color">教育技术</span>
-                    </a>
-                    
-                    <a href="/personal-blog/tags/%E4%BA%92%E5%8A%A8%E5%AD%A6%E4%B9%A0/">
-                        <span class="chip bg-color">互动学习</span>
-                    </a>
-                    
-                </div>
-                
-            </div>
-        </div>
-        
-    </div>
-</article>
-
 </div>
 
 
@@ -633,7 +457,6 @@
                 $tocAside.addClass(expandedClass).show();
                 $mainContent.addClass('l9');
             }
-            fixPostCardWidth('artDetail', 'prenext-posts');
         });
         
     });
@@ -848,6 +671,8 @@ $(function () {
 
     
 
+
+<script src="/personal-blog/js/admin-panel.js?v=11"></script>
 </body>
 
 </html>

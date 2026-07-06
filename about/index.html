@@ -44,7 +44,7 @@
 <link rel="stylesheet" type="text/css" href="/personal-blog/libs/animate/animate.min.css">
 <link rel="stylesheet" type="text/css" href="/personal-blog/libs/lightGallery/css/lightgallery.min.css">
 <link rel="stylesheet" type="text/css" href="/personal-blog/css/matery.css?v=20260704a">
-<link rel="stylesheet" type="text/css" href="/personal-blog/css/my.css?v=20260704a">
+<link rel="stylesheet" type="text/css" href="/personal-blog/css/my.css?v=20260706b">
 <link rel="stylesheet" type="text/css" href="/personal-blog/css/dark.css" media="none" onload="if(media!='all')media='all'">
 
 
@@ -80,13 +80,35 @@
 <a href="#" data-target="mobile-nav" class="sidenav-trigger button-collapse"><i class="fas fa-bars"></i></a>
 <ul class="right nav-menu">
   
-  <li class="hide-on-med-and-down nav-item">
+<li class="hide-on-med-and-down nav-item">
     
     <a href="/personal-blog/" class="waves-effect waves-light">
       
       <i class="fas fa-home" style="zoom: 0.6;"></i>
       
       <span>首页</span>
+    </a>
+    
+  </li>
+  
+<li class="hide-on-med-and-down nav-item">
+    
+    <a href="/personal-blog/about" class="waves-effect waves-light">
+      
+      <i class="fas fa-user-circle" style="zoom: 0.6;"></i>
+      
+      <span>关于</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/personal-blog/works" class="waves-effect waves-light">
+      
+      <i class="fas fa-rocket" style="zoom: 0.6;"></i>
+      
+      <span>作品</span>
     </a>
     
   </li>
@@ -113,49 +135,18 @@
     
   </li>
   
-  <li class="hide-on-med-and-down nav-item">
-    
-    <a href="/personal-blog/archives" class="waves-effect waves-light">
-      
-      <i class="fas fa-archive" style="zoom: 0.6;"></i>
-      
-      <span>归档</span>
-    </a>
-    
-  </li>
-  
-  <li class="hide-on-med-and-down nav-item">
-    
-    <a href="/personal-blog/about" class="waves-effect waves-light">
-      
-      <i class="fas fa-user-circle" style="zoom: 0.6;"></i>
-      
-      <span>关于</span>
-    </a>
-    
-  </li>
-  
-  <li class="hide-on-med-and-down nav-item">
-    
-    <a href="/personal-blog/works" class="waves-effect waves-light">
-      
-      <i class="fas fa-rocket" style="zoom: 0.6;"></i>
-      
-      <span>作品</span>
-    </a>
-    
-  </li>
-  
-  <li>
+<li>
     <a href="#searchModal" class="modal-trigger waves-effect waves-light">
       <i id="searchIcon" class="fas fa-search" title="搜索" style="zoom: 0.85;"></i>
     </a>
   </li>
-  <li>
+  
+<li>
     <a href="javascript:;" class="waves-effect waves-light" onclick="switchNightMode()" title="深色/浅色模式" >
       <i id="sum-moon-icon" class="fas fa-sun" style="zoom: 0.85;"></i>
     </a>
   </li>
+
 </ul>
 
 
@@ -173,7 +164,7 @@
 
     <ul class="menu-list mobile-menu-list">
         
-        <li class="m-nav-item">
+<li class="m-nav-item">
 	  
 		<a href="/personal-blog/" class="waves-effect waves-light">
 			
@@ -184,38 +175,8 @@
           
         </li>
         
-        <li class="m-nav-item">
+<li class="m-nav-item">
 	  
-		<a href="/personal-blog/tags" class="waves-effect waves-light">
-			
-			    <i class="fa-fw fas fa-tags"></i>
-			
-			标签
-		</a>
-          
-        </li>
-        
-        <li class="m-nav-item">
-	  
-		<a href="/personal-blog/categories" class="waves-effect waves-light">
-			
-			    <i class="fa-fw fas fa-bookmark"></i>
-			
-			分类
-		</a>
-          
-        </li>
-        
-        <li class="m-nav-item">
-	  
-		<a href="/personal-blog/archives" class="waves-effect waves-light">
-			
-			    <i class="fa-fw fas fa-archive"></i>
-			
-			归档
-		</a>
-          
-        </li>
         
         <li class="m-nav-item">
 	  
@@ -228,7 +189,7 @@
           
         </li>
         
-        <li class="m-nav-item">
+<li class="m-nav-item">
 	  
 		<a href="/personal-blog/works" class="waves-effect waves-light">
 			
@@ -239,8 +200,30 @@
           
         </li>
         
+<li class="m-nav-item">
+	  
+		<a href="/personal-blog/tags" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-tags"></i>
+			
+			标签
+		</a>
+          
+        </li>
         
-    </ul>
+<li class="m-nav-item">
+	  
+		<a href="/personal-blog/categories" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-bookmark"></i>
+			
+			分类
+		</a>
+          
+        </li>
+        
+    
+</ul>
 </div>
 
 
@@ -314,438 +297,88 @@
 </div>
 
 <main class="content">
-
-    <div id="aboutme" class="container about-container">
-        <div class="card">
-            <div class="card-content">
-                <div class="row">
-                    <div class="post-statis col l4 hide-on-med-and-down" data-aos="zoom-in-right">
-                        
-<div class="statis">
-    <span class="count"><a href="/personal-blog/">3</a></span>
-    <span class="name">文章</span>
-</div>
-
-
-
-<div class="statis">
-    <span class="count"><a href="/personal-blog/categories">2</a></span>
-    <span class="name">分类</span>
-</div>
-
-
-
-<div class="statis">
-    <span class="count"><a href="/personal-blog/tags">5</a></span>
-    <span class="name">标签</span>
-</div>
-
-
-                    </div>
-                    <div class="col s12 m12 l4">
-                        <div class="profile center-align">
-                            <div class="avatar">
-                                <img src="https://api.dicebear.com/7.x/notionists/svg?seed=Xiaohong" alt="小红"
-                                     class="circle responsive-img avatar-img">
-                            </div>
-                            <div class="author">
-                                <div class="post-statis hide-on-large-only" data-aos="zoom-in-right">
-                                    
-<div class="statis">
-    <span class="count"><a href="/personal-blog/">3</a></span>
-    <span class="name">文章</span>
-</div>
-
-
-
-<div class="statis">
-    <span class="count"><a href="/personal-blog/categories">2</a></span>
-    <span class="name">分类</span>
-</div>
-
-
-
-<div class="statis">
-    <span class="count"><a href="/personal-blog/tags">5</a></span>
-    <span class="name">标签</span>
-</div>
-
-
-                                </div>
-                                <div class="title">小红</div>
-                                <div class="career">AI 赋能的教育探索者</div>
-                                <div class="social-link hide-on-large-only" data-aos="zoom-in-left">
-                                    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col l4 hide-on-med-and-down" data-aos="zoom-in-left">
-                        <div class="social-link">
-                            
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                        </div>
+    <!-- 关于页面 - 全新设计 -->
+    <div class="about-page-wrapper">
+        
+        <!-- 作者简介卡片 -->
+        <div class="about-hero-card">
+            <div class="about-hero-inner">
+                <div class="about-avatar-col">
+                    <div class="about-avatar-ring">
+                        <img src="/personal-blog/medias/avatar.svg" alt="小红" class="about-avatar-img">
                     </div>
                 </div>
-
-                <div class="introduction center-align" data-aos="fade-up">不是技术出身，但用 AI 把想法变成现实。在教育行业，做 AI 相关的产品。</div>
-
-                <style type="text/css">
-    #posts-chart,
-    #categories-chart,
-    #tags-chart {
-        width: 100%;
-        height: 300px;
-        margin: 0.5rem auto;
-        padding: 0.5rem;
-    }
-</style>
-
-<div id="postCharts" class="post-charts">
-    <div class="title center-align" data-aos="zoom-in-up">
-        <i class="far fa-bar-chart"></i>&nbsp;&nbsp;文章统计图
-    </div>
-    <div class="row">
-        <div class="chart col s12 m6 l4" data-aos="zoom-in-up">
-            <div id="posts-chart"></div>
-        </div>
-
-        <div class="chart col s12 m6 l4" data-aos="zoom-in-up">
-            <div id="categories-chart"></div>
-        </div>
-
-        <div class="chart col s12 m6 l4" data-aos="zoom-in-up">
-            <div id="tags-chart"></div>
-        </div>
-    </div>
-</div>
-
-<script type="text/javascript" src="/personal-blog/libs/echarts/echarts.min.js"></script>
-<script>
-    let postsChart = echarts.init(document.getElementById('posts-chart'));
-    let categoriesChart = echarts.init(document.getElementById('categories-chart'));
-    let tagsChart = echarts.init(document.getElementById('tags-chart'));
-
-    
-
-    let postsOption = {
-        title: {
-            text: '文章发布统计图',
-            top: -5,
-            x: 'center'
-        },
-        tooltip: {
-            trigger: 'axis'
-        },
-        xAxis: {
-            type: 'category',
-            data: ["2025-07","2025-08","2025-09","2025-10","2025-11","2025-12","2026-01","2026-02","2026-03","2026-04","2026-05","2026-06","2026-07"]
-        },
-        yAxis: {
-            type: 'value',
-        },
-        series: [
-            {
-                name: '文章篇数',
-                type: 'line',
-                color: ['#6772e5'],
-                data: [1,0,0,0,0,0,0,0,0,0,0,0,0],
-                markPoint: {
-                    symbolSize: 45,
-                    color: ['#fa755a','#3ecf8e','#82d3f4'],
-                    data: [{
-                        type: 'max',
-                        itemStyle: {color: ['#3ecf8e']},
-                        name: '最大值'
-                    }, {
-                        type: 'min',
-                        itemStyle: {color: ['#fa755a']},
-                        name: '最小值'
-                    }]
-                },
-                markLine: {
-                    itemStyle: {color: ['#ab47bc']},
-                    data: [
-                        {type: 'average', name: '平均值'}
-                    ]
-                }
-            }
-        ]
-    };
-
-    
-
-    let categoriesOption = {
-        title: {
-            text: '文章分类统计图',
-            top: -4,
-            x: 'center'
-        },
-        tooltip: {
-            trigger: 'item',
-            formatter: "{a} <br/>{b} : {c} ({d}%)"
-        },
-        series: [
-            {
-                name: '分类',
-                type: 'pie',
-                radius: '50%',
-                color: ['#6772e5', '#ff9e0f', '#fa755a', '#3ecf8e', '#82d3f4', '#ab47bc', '#525f7f', '#f51c47', '#26A69A'],
-                data: [{"name":"技术","value":2},{"name":"生活","value":1}],
-                itemStyle: {
-                    emphasis: {
-                        shadowBlur: 10,
-                        shadowOffsetX: 0,
-                        shadowColor: 'rgba(0, 0, 0, 0.5)'
-                    }
-                }
-            }
-        ]
-    };
-
-    
-
-    let tagsOption = {
-        title: {
-            text: 'TOP10 标签统计图',
-            top: -5,
-            x: 'center'
-        },
-        tooltip: {},
-        xAxis: [
-            {
-                type: 'category',
-                data: ["教育技术","前端开发","互动学习","博客","个人"]
-            }
-        ],
-        yAxis: [
-            {
-                type: 'value'
-            }
-        ],
-        series: [
-            {
-                type: 'bar',
-                color: ['#82d3f4'],
-                barWidth : 18,
-                data: [2,1,1,1,1],
-                markPoint: {
-                    symbolSize: 45,
-                    data: [{
-                        type: 'max',
-                        itemStyle: {color: ['#3ecf8e']},
-                        name: '最大值'
-                    }, {
-                        type: 'min',
-                        itemStyle: {color: ['#fa755a']},
-                        name: '最小值'
-                    }],
-                },
-                markLine: {
-                    itemStyle: {color: ['#ab47bc']},
-                    data: [
-                        {type: 'average', name: '平均值'}
-                    ]
-                }
-            }
-        ]
-    };
-
-    // render the charts
-    postsChart.setOption(postsOption);
-    categoriesChart.setOption(categoriesOption);
-    tagsChart.setOption(tagsOption);
-</script>
-
-
-                
-                
-<div class="my-projects">
-    <div class="title center-align" data-aos="zoom-in-up">
-        <i class="fas fa-gift"></i>&nbsp;&nbsp;我的项目
-    </div>
-    <div class="row">
-        
-        
-        <div class="col s12 m6 l4" data-aos="fade-up">
-            <div class="info center-align">
-                <a href="https://zrh-iris.github.io/english-oral-practice/" class="icon"
-                   style="background: linear-gradient(to bottom right, #42A5F5 0%, #1E88E5 100%)" target="_blank">
-                    <i class="fas fa-headphones"></i>
-                </a>
-                <div class="info-title">
-                    <a href="https://zrh-iris.github.io/english-oral-practice/" target="_blank">英语口语练习平台</a>
+                <div class="about-info-col">
+                    <h1 class="about-name">小红</h1>
+                    <p class="about-tagline">AI 赋能的教育探索者</p>
+                    <p class="about-quote">「不是会了才去做，是做了才会」</p>
+                    <div class="about-badges">
+                        <span class="about-badge"><i class="fas fa-pencil-alt"></i> 3 篇文章</span>
+                        <span class="about-badge"><i class="fas fa-bookmark"></i> 2 个分类</span>
+                        <span class="about-badge"><i class="fas fa-tags"></i> 5 个标签</span>
+                    </div>
                 </div>
-                <div class="info-desc">在线英语口语跟读和情境对话工具</div>
             </div>
         </div>
-        
-        <div class="col s12 m6 l4" data-aos="fade-up">
-            <div class="info center-align">
-                <a href="https://zrh-iris.github.io/node-era-scenarios/" class="icon"
-                   style="background: linear-gradient(to bottom right, #66BB6A 0%, #43A047 100%)" target="_blank">
-                    <i class="fas fa-gamepad"></i>
-                </a>
-                <div class="info-title">
-                    <a href="https://zrh-iris.github.io/node-era-scenarios/" target="_blank">节点引擎场景</a>
+
+        <!-- 我是谁 -->
+        <div class="about-section" data-aos="fade-up">
+            <h2 class="about-section-title"><i class="fas fa-user-circle"></i> 我是谁</h2>
+            <div class="about-section-body">
+                <p>一个在教育行业摸爬滚打的人。</p>
+                <p>不是技术出身，但喜欢用 AI 把脑子里冒出来的想法变成能用的东西。从零开始，一路踩坑，也一路成长。</p>
+                <p>我相信——<strong>技术不应该只是程序员的专利</strong>。当 AI 让"创作"的门槛降到足够低，每个人都可以把自己的想法变成产品。</p>
+            </div>
+        </div>
+
+        <!-- 我在做什么 -->
+        <div class="about-section" data-aos="fade-up">
+            <h2 class="about-section-title"><i class="fas fa-rocket"></i> 我在做什么</h2>
+            <div class="about-section-body">
+                <div class="about-doing-grid">
+                    <div class="about-doing-item">
+                        <div class="doing-icon">🎧</div>
+                        <h3>英语口语练习平台</h3>
+                        <p>用 AI 做的在线英语口语跟读和情境对话工具，手机端也能用。让练口语不再需要找语伴。</p>
+                        <a href="https://zrh-iris.github.io/english-oral-practice/" target="_blank" class="about-link">去看看 →</a>
+                    </div>
+                    <div class="about-doing-item">
+                        <div class="doing-icon">🎮</div>
+                        <h3>节点引擎场景</h3>
+                        <p>场景化互动学习工具。把知识放进场景里，学生在解决问题的过程中学习，比死记硬背有效得多。</p>
+                        <a href="https://zrh-iris.github.io/node-era-scenarios/" target="_blank" class="about-link">去看看 →</a>
+                    </div>
+                    <div class="about-doing-item">
+                        <div class="doing-icon">💡</div>
+                        <h3>更多项目开发中</h3>
+                        <p>脑子里还有很多想法，正在一个一个变成现实。持续更新中 ✨</p>
+                    </div>
                 </div>
-                <div class="info-desc">基于场景的互动学习工具</div>
             </div>
         </div>
-        
-        
-    </div>
-</div>
 
-                
-
-                
-                
-<div class="my-skills">
-    <div class="title center-align" data-aos="zoom-in-up">
-        <i class="fas fa-wrench"></i>&nbsp;&nbsp;我的技能
-    </div>
-    <div class="row">
-        
-        
-        
-        <div class="col s12 m6 l6" data-aos="fade-up">
-            <div class="skillbar">
-                <div class="skillbar-title"
-                     style="background: linear-gradient(to right, #42A5F5 0%, #1E88E5 100%); width: 95%">
-                    <span>英语教学</span>
-                </div>
-                <div class="skill-bar-percent">95%</div>
+        <!-- 我的故事 -->
+        <div class="about-section" data-aos="fade-up">
+            <h2 class="about-section-title"><i class="fas fa-feather-alt"></i> 我的故事</h2>
+            <div class="about-section-body">
+                <p>我以前不是做技术的，在教育行业工作。后来接触了 AI，发现原来「把想法变成产品」这件事，不再需要写几万行代码了。</p>
+                <p>于是我开始了自己的折腾之路——用 AI 辅助写代码，做自己想要的工具，解决自己在工作中遇到的真实问题。</p>
+                <p>这个网站就是我所有的折腾成果展。每一个项目、每一篇文章，都记录着从零到一的过程。</p>
+                <p>希望能给你一点启发，或者一句「原来还能这样啊」的惊喜。😊</p>
             </div>
         </div>
-        
-        
-        <div class="col s12 m6 l6" data-aos="fade-up">
-            <div class="skillbar">
-                <div class="skillbar-title"
-                     style="background: linear-gradient(to right, #FF7043 0%, #F4511E 100%); width: 80%">
-                    <span>HTML/CSS/JS</span>
-                </div>
-                <div class="skill-bar-percent">80%</div>
+
+        <!-- 我的理念 -->
+        <div class="about-section about-philosophy" data-aos="fade-up">
+            <h2 class="about-section-title"><i class="fas fa-lightbulb"></i> 我的理念</h2>
+            <div class="about-section-body">
+                <blockquote class="about-blockquote">
+                    <p>不是会了才去做，是做了才会。</p>
+                    <p>用 AI 把想法变成现实——每一个小小的开始，都值得被认真对待。</p>
+                </blockquote>
             </div>
         </div>
-        
-        
-        <div class="col s12 m6 l6" data-aos="fade-up">
-            <div class="skillbar">
-                <div class="skillbar-title"
-                     style="background: linear-gradient(to right, #66BB6A 0%, #43A047 100%); width: 70%">
-                    <span>Vue.js</span>
-                </div>
-                <div class="skill-bar-percent">70%</div>
-            </div>
-        </div>
-        
-        
-        <div class="col s12 m6 l6" data-aos="fade-up">
-            <div class="skillbar">
-                <div class="skillbar-title"
-                     style="background: linear-gradient(to right, #AB47BC 0%, #8E24AA 100%); width: 65%">
-                    <span>Python</span>
-                </div>
-                <div class="skill-bar-percent">65%</div>
-            </div>
-        </div>
-        
-        
-        <div class="col s12 m6 l6" data-aos="fade-up">
-            <div class="skillbar">
-                <div class="skillbar-title"
-                     style="background: linear-gradient(to right, #FFA726 0%, #FB8C00 100%); width: 75%">
-                    <span>UI设计</span>
-                </div>
-                <div class="skill-bar-percent">75%</div>
-            </div>
-        </div>
-        
-        
-    </div>
 
-    
-
-    
-    <div class="other-skills chip-container" data-aos="zoom-in-up">
-        <div class="sub-title center-align"><i class="fa fa-book"></i>&nbsp;&nbsp;其他技能</div>
-        <div class="tag-chips center-align">
-            
-            
-            <a href="/personal-blog/tags/%E6%95%99%E8%82%B2%E6%8A%80%E6%9C%AF/">
-                <span class="chip center-align waves-effect waves-light chip-default">教育技术</span>
-            </a>
-            
-            
-            
-            <a href="/personal-blog/tags/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/">
-                <span class="chip center-align waves-effect waves-light chip-default">前端开发</span>
-            </a>
-            
-            
-            
-            <a href="/personal-blog/tags/%E4%BA%92%E5%8A%A8%E5%AD%A6%E4%B9%A0/">
-                <span class="chip center-align waves-effect waves-light chip-default">互动学习</span>
-            </a>
-            
-            
-            
-            <a href="/personal-blog/tags/%E5%8D%9A%E5%AE%A2/">
-                <span class="chip center-align waves-effect waves-light chip-default">博客</span>
-            </a>
-            
-            
-            
-            <a href="/personal-blog/tags/%E4%B8%AA%E4%BA%BA/">
-                <span class="chip center-align waves-effect waves-light chip-default">个人</span>
-            </a>
-            
-            
-        </div>
-    </div>
-    
-
-</div>
-
-                
-
-                
-                
-                
-                
-            </div>
-        </div>
     </div>
 </main>
 
@@ -952,6 +585,8 @@ $(function () {
 
     
 
+
+<script src="/personal-blog/js/admin-panel.js?v=11"></script>
 </body>
 
 </html>

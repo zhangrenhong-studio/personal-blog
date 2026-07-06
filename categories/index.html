@@ -44,7 +44,7 @@
 <link rel="stylesheet" type="text/css" href="/personal-blog/libs/animate/animate.min.css">
 <link rel="stylesheet" type="text/css" href="/personal-blog/libs/lightGallery/css/lightgallery.min.css">
 <link rel="stylesheet" type="text/css" href="/personal-blog/css/matery.css?v=20260703b">
-<link rel="stylesheet" type="text/css" href="/personal-blog/css/my.css?v=20260703b">
+<link rel="stylesheet" type="text/css" href="/personal-blog/css/my.css?v=20260706b">
 <link rel="stylesheet" type="text/css" href="/personal-blog/css/dark.css" media="none" onload="if(media!='all')media='all'">
 
 
@@ -80,13 +80,35 @@
 <a href="#" data-target="mobile-nav" class="sidenav-trigger button-collapse"><i class="fas fa-bars"></i></a>
 <ul class="right nav-menu">
   
-  <li class="hide-on-med-and-down nav-item">
+<li class="hide-on-med-and-down nav-item">
     
     <a href="/personal-blog/" class="waves-effect waves-light">
       
       <i class="fas fa-home" style="zoom: 0.6;"></i>
       
       <span>首页</span>
+    </a>
+    
+  </li>
+  
+<li class="hide-on-med-and-down nav-item">
+    
+    <a href="/personal-blog/about" class="waves-effect waves-light">
+      
+      <i class="fas fa-user-circle" style="zoom: 0.6;"></i>
+      
+      <span>关于</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/personal-blog/works" class="waves-effect waves-light">
+      
+      <i class="fas fa-rocket" style="zoom: 0.6;"></i>
+      
+      <span>作品</span>
     </a>
     
   </li>
@@ -113,49 +135,18 @@
     
   </li>
   
-  <li class="hide-on-med-and-down nav-item">
-    
-    <a href="/personal-blog/archives" class="waves-effect waves-light">
-      
-      <i class="fas fa-archive" style="zoom: 0.6;"></i>
-      
-      <span>归档</span>
-    </a>
-    
-  </li>
-  
-  <li class="hide-on-med-and-down nav-item">
-    
-    <a href="/personal-blog/about" class="waves-effect waves-light">
-      
-      <i class="fas fa-user-circle" style="zoom: 0.6;"></i>
-      
-      <span>关于</span>
-    </a>
-    
-  </li>
-  
-  <li class="hide-on-med-and-down nav-item">
-    
-    <a href="/personal-blog/works" class="waves-effect waves-light">
-      
-      <i class="fas fa-rocket" style="zoom: 0.6;"></i>
-      
-      <span>作品</span>
-    </a>
-    
-  </li>
-  
-  <li>
+<li>
     <a href="#searchModal" class="modal-trigger waves-effect waves-light">
       <i id="searchIcon" class="fas fa-search" title="搜索" style="zoom: 0.85;"></i>
     </a>
   </li>
-  <li>
+  
+<li>
     <a href="javascript:;" class="waves-effect waves-light" onclick="switchNightMode()" title="深色/浅色模式" >
       <i id="sum-moon-icon" class="fas fa-sun" style="zoom: 0.85;"></i>
     </a>
   </li>
+
 </ul>
 
 
@@ -173,7 +164,7 @@
 
     <ul class="menu-list mobile-menu-list">
         
-        <li class="m-nav-item">
+<li class="m-nav-item">
 	  
 		<a href="/personal-blog/" class="waves-effect waves-light">
 			
@@ -184,38 +175,8 @@
           
         </li>
         
-        <li class="m-nav-item">
+<li class="m-nav-item">
 	  
-		<a href="/personal-blog/tags" class="waves-effect waves-light">
-			
-			    <i class="fa-fw fas fa-tags"></i>
-			
-			标签
-		</a>
-          
-        </li>
-        
-        <li class="m-nav-item">
-	  
-		<a href="/personal-blog/categories" class="waves-effect waves-light">
-			
-			    <i class="fa-fw fas fa-bookmark"></i>
-			
-			分类
-		</a>
-          
-        </li>
-        
-        <li class="m-nav-item">
-	  
-		<a href="/personal-blog/archives" class="waves-effect waves-light">
-			
-			    <i class="fa-fw fas fa-archive"></i>
-			
-			归档
-		</a>
-          
-        </li>
         
         <li class="m-nav-item">
 	  
@@ -228,7 +189,7 @@
           
         </li>
         
-        <li class="m-nav-item">
+<li class="m-nav-item">
 	  
 		<a href="/personal-blog/works" class="waves-effect waves-light">
 			
@@ -239,8 +200,30 @@
           
         </li>
         
+<li class="m-nav-item">
+	  
+		<a href="/personal-blog/tags" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-tags"></i>
+			
+			标签
+		</a>
+          
+        </li>
         
-    </ul>
+<li class="m-nav-item">
+	  
+		<a href="/personal-blog/categories" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-bookmark"></i>
+			
+			分类
+		</a>
+          
+        </li>
+        
+    
+</ul>
 </div>
 
 
@@ -608,6 +591,8 @@ $(function () {
 
     
 
+
+<script src="/personal-blog/js/admin-panel.js?v=11"></script>
 </body>
 
 </html>
