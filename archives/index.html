@@ -44,7 +44,7 @@
 <link rel="stylesheet" type="text/css" href="/personal-blog/libs/animate/animate.min.css">
 <link rel="stylesheet" type="text/css" href="/personal-blog/libs/lightGallery/css/lightgallery.min.css">
 <link rel="stylesheet" type="text/css" href="/personal-blog/css/matery.css?v=20260704a">
-<link rel="stylesheet" type="text/css" href="/personal-blog/css/my.css?v=20260819-about-house">
+<link rel="stylesheet" type="text/css" href="/personal-blog/css/my.css?v=20260819-nav-search">
 <link rel="stylesheet" type="text/css" href="/personal-blog/css/dark.css" media="none" onload="if(media!='all')media='all'">
 
 
@@ -91,27 +91,9 @@
     
   </li>
   
-  <li class="hide-on-med-and-down nav-item">
-    
-    <a href="/personal-blog/tags" class="waves-effect waves-light">
-      
-      <i class="fas fa-tags" style="zoom: 0.6;"></i>
-      
-      <span>标签</span>
-    </a>
-    
-  </li>
   
-  <li class="hide-on-med-and-down nav-item">
-    
-    <a href="/personal-blog/categories" class="waves-effect waves-light">
-      
-      <i class="fas fa-bookmark" style="zoom: 0.6;"></i>
-      
-      <span>分类</span>
-    </a>
-    
-  </li>
+  
+  
   
   <li class="hide-on-med-and-down nav-item">
     
@@ -146,11 +128,12 @@
     
   </li>
   
-  <li>
-    <a href="#searchModal" class="modal-trigger waves-effect waves-light">
-      <i id="searchIcon" class="fas fa-search" title="搜索" style="zoom: 0.85;"></i>
-    </a>
-  </li>
+  
+<li class="hide-on-med-and-down nav-item site-search-nav">
+  <a href="#searchModal" class="modal-trigger waves-effect waves-light" title="搜索网站">
+    <i class="fas fa-search" style="zoom: 0.68;"></i><span>搜索</span>
+  </a>
+</li>
   <li>
     <a href="javascript:;" class="waves-effect waves-light" onclick="switchNightMode()" title="深色/浅色模式" >
       <i id="sum-moon-icon" class="fas fa-sun" style="zoom: 0.85;"></i>
@@ -184,27 +167,9 @@
           
         </li>
         
-        <li class="m-nav-item">
-	  
-		<a href="/personal-blog/tags" class="waves-effect waves-light">
-			
-			    <i class="fa-fw fas fa-tags"></i>
-			
-			标签
-		</a>
-          
-        </li>
         
-        <li class="m-nav-item">
-	  
-		<a href="/personal-blog/categories" class="waves-effect waves-light">
-			
-			    <i class="fa-fw fas fa-bookmark"></i>
-			
-			分类
-		</a>
-          
-        </li>
+        
+        
         
         <li class="m-nav-item">
 	  
@@ -240,7 +205,11 @@
         </li>
         
         
-    </ul>
+    
+<li class="m-nav-item site-search-nav">
+  <a href="#searchModal" class="modal-trigger waves-effect waves-light"><i class="fa-fw fas fa-search"></i>搜索</a>
+</li>
+</ul>
 </div>
 
 
@@ -464,7 +433,7 @@ $(function () {
     <!-- 回到顶部按钮 -->
 <div id="backTop" class="top-scroll">
     <a class="btn-floating btn-large waves-effect waves-light" href="#!">
-        <i class="fas fa-arrow-up"></i>
+        <i class="fas fa-chevron-up"></i>
     </a>
 </div>
 
