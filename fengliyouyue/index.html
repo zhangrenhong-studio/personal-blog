@@ -7,7 +7,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;700&family=Alumni+Sans:ital,wght@0,100;0,300;0,400;1,100&family=Albert+Sans:wght@300;400;500&display=swap" rel="stylesheet">
     <meta charset="utf-8">
-    <meta name="keywords" content="我的作品, 教育技术, 英语教学, 开发者">
+    <meta name="keywords" content="关于我, 教育技术, 英语教学, 开发者">
     <meta name="description" content="技术爱好者 | 内容创作者">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -20,7 +20,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>我的作品 | 小红的个人空间</title>
+    <title>风里约行 | 小红的个人空间</title>
     <link rel="icon" type="image/png" href="/personal-blog/favicon.png">
     
     <style>
@@ -203,32 +203,84 @@
 
 </header>
 
-    
+    <style type="text/css">
+    /* don't remove. */
+    .about-cover {
+        height: 75vh;
+    }
+</style>
 
+<div class="bg-cover pd-header about-cover">
+    <div class="container">
+    <div class="row">
+    <div class="col s10 offset-s1 m8 offset-m2 l8 offset-l2">
+        <div class="brand">
+            <div class="title center-align">
+                
+                用 AI 把想法变成现实
+                
+            </div>
 
-
-<div class="bg-cover pd-header post-cover" style="background-image: url('/personal-blog/medias/banner/4.jpg')">
-    <div class="container" style="right: 0px;left: 0px;">
-        <div class="row">
-            <div class="col s12 m12 l12">
-                <div class="brand">
-                    <h1 class="description center-align post-title">我的作品</h1>
-                </div>
+            <div class="description center-align">
+                
+                <span id="subtitle"></span>
+                <script src="/personal-blog/libs/typed/typed.js"></script>
+                <script>
+                    var typed = new Typed("#subtitle", {
+                        strings: [ 
+                            
+                                "不是会了才去做，是做了才会",
+                            
+                                "从零开始，用 AI 赋能自己",
+                            
+                        ],
+                        startDelay: 300,
+                        typeSpeed: 100,
+                        loop: true,
+                        backSpeed: 50,
+                        showCursor: true
+                    });
+                </script>
+                
             </div>
         </div>
     </div>
 </div>
 
 
+<script>
+    // 每天切换 banner 图.  Switch banner image every day.
+    var bannerUrl = "/personal-blog/medias/banner/" + new Date().getDay() + '.jpg';
+    $('.bg-cover').css('background-image', 'url(' + bannerUrl + ')');
+</script>
+<script>
+    
+      var bannerUrl = "/personal-blog/medias/featureimages/" + Math.floor(Math.random() * 7) + '.jpg';
+    
+    $('.bg-cover.about-cover').css('background-image', 'url(' + bannerUrl + ')');
+
+</script>
 
 
-<main class="content"><section class="works-meadow"><div class="works-heading container"><p class="pasture-kicker" style="color:#2f6942;-webkit-text-fill-color:#2f6942">小红的作品小屋</p><h1>推开一扇门，<em>就是一个新世界。</em></h1><p>这些不是“项目列表”，而是我把真实问题、好奇心和一点点不服输，慢慢做出来的东西。</p></div><div class="works-hero-sheep"><img src="/personal-blog/medias/lazy-sheep/smile.jpg" alt="开心的懒羊羊"></div></section><section class="works-list container"><div class="house-village"><a class="project-house house-lilac" href="/personal-blog/about/"><span class="house-roof"></span><span class="house-chimney"></span><span class="house-sheep rooftop-sheep"><img src="/personal-blog/medias/lazy-sheep/rooftop-lounge.jpg" alt="坐在门口的懒羊羊"></span><div class="house-body"><span class="house-sign">我的小角落</span><h3 style="color:#2f6942;-webkit-text-fill-color:#2f6942">认识小红</h3><p>一个 03 年的女生，属羊、射手座，来自四川南充的小县城。</p><b>推门认识我 <i class="fas fa-arrow-right"></i></b></div></a>
-<a class="project-house house-sky" href="https://zhangrenhong-studio.github.io/english-oral-practice/" target="_blank" rel="noopener"><span class="house-roof"></span><span class="house-chimney"></span><span class="house-sheep rooftop-sheep"><img src="/personal-blog/medias/lazy-sheep/rooftop-lounge.jpg" alt="趴在屋顶上的懒羊羊"></span><div class="house-body"><span class="house-sign">学习小工具</span><h3 style="color:#2f6942;-webkit-text-fill-color:#2f6942">英语口语练习</h3><p>给想练开口的人，一个可以跟读、对话、记录进度的小空间。</p><b>打开这间小屋 <i class="fas fa-arrow-right"></i></b></div></a>
-<a class="project-house house-meadow" href="https://zhangrenhong-studio.github.io/node-era-scenarios/" target="_blank" rel="noopener"><span class="house-roof"></span><span class="house-chimney"></span><span class="house-sheep rooftop-sheep"><img src="/personal-blog/medias/lazy-sheep/rooftop-lounge.jpg" alt="趴在屋顶上的懒羊羊"></span><div class="house-body"><span class="house-sign">互动学习</span><h3 style="color:#2f6942;-webkit-text-fill-color:#2f6942">节点引擎场景</h3><p>让知识发生在具体情境里，也让学习更像一次亲身经历。</p><b>打开这间小屋 <i class="fas fa-arrow-right"></i></b></div></a>
-<a class="project-house house-apricot" href="http://47.105.94.57/xiaohong/node-engine-tutorials/" target="_blank" rel="noopener"><span class="house-roof"></span><span class="house-chimney"></span><span class="house-sheep rooftop-sheep"><img src="/personal-blog/medias/lazy-sheep/rooftop-lounge.jpg" alt="趴在屋顶上的懒羊羊"></span><div class="house-body"><span class="house-sign">视频教程</span><h3 style="color:#2f6942;-webkit-text-fill-color:#2f6942">节点视频教程</h3><p>把复杂操作讲明白，让每个人都能用好自己的节点。</p><b>打开这间小屋 <i class="fas fa-arrow-right"></i></b></div></a>
-<a class="project-house house-lilac" href="https://zhangrenhong-studio.github.io/personal-workbench/" target="_blank" rel="noopener"><span class="house-roof"></span><span class="house-chimney"></span><span class="house-sheep rooftop-sheep"><img src="/personal-blog/medias/lazy-sheep/rooftop-lounge.jpg" alt="趴在屋顶上的懒羊羊"></span><div class="house-body"><span class="house-sign">个人工作台</span><h3 style="color:#2f6942;-webkit-text-fill-color:#2f6942">灵感工作台</h3><p>把零碎念头接住，再慢慢整理成真正值得做的事。</p><b>打开这间小屋 <i class="fas fa-arrow-right"></i></b></div></a><a class="project-house house-meadow" href="/personal-blog/fengliyouyue/"><span class="house-roof"></span><span class="house-chimney"></span><span class="house-sheep rooftop-sheep"><img src="/personal-blog/medias/lazy-sheep/rooftop-lounge.jpg" alt="趴在屋顶上的懒羊羊"></span><div class="house-body"><span class="house-sign">生活方式产品</span><h3 style="color:#2f6942;-webkit-text-fill-color:#2f6942">风里约行</h3><p>把一段空闲时间，变成一次可以真实发生的城市出发。</p><b>打开这间小屋 <i class="fas fa-arrow-right"></i></b></div></a></div><div class="empty-plot"><span>🌱</span><h2>这里留给下一间小屋</h2><p>新的想法还在长出来，等它准备好，就会搬进来。</p></div></section></main>
+    </div>
+</div>
 
-
+<main class="content fengli-case">
+<style>
+.fengli-case{background:#fbf9f2;padding-bottom:68px;color:#244333}.fengli-case *{box-sizing:border-box}.fengli-case .case-wrap{max-width:1040px;margin:0 auto;padding:40px 24px 0}.fengli-case .case-crumb{display:inline-flex;gap:8px;align-items:center;color:#52735d;font-size:14px;text-decoration:none;margin-bottom:24px}.fengli-case .case-crumb:hover{color:#d97944}.fengli-case .case-hero{display:grid;grid-template-columns:1.05fr .95fr;overflow:hidden;border:2px solid #2f6942;border-radius:28px;background:#e4f0dc;box-shadow:7px 8px 0 #d6a270}.fengli-case .case-hero-copy{padding:44px 40px 38px}.fengli-case .case-kicker{display:inline-block;padding:7px 11px;border:1.5px solid #356c3c;border-radius:999px;color:#356c3c;background:#fdfbf4;font-size:13px;font-weight:700}.fengli-case h1{margin:18px 0 12px;font-size:50px;line-height:1;letter-spacing:-2px;color:#2f6942}.fengli-case .case-lead{margin:0;max-width:450px;color:#365948;font-size:18px;line-height:1.75}.fengli-case .case-meta{display:flex;flex-wrap:wrap;gap:8px;margin-top:24px}.fengli-case .case-meta span{padding:7px 10px;border-radius:999px;background:#fffdf5;color:#365948;font-size:13px}.fengli-case .case-hero-media{min-height:358px;position:relative;background:#78946d}.fengli-case .case-hero-media img{width:100%;height:100%;object-fit:cover;display:block}.fengli-case .case-photo-note{position:absolute;right:16px;bottom:15px;padding:8px 11px;background:#fffdf5;color:#365948;border-radius:9px;font-size:12px;box-shadow:2px 3px 0 rgba(46,94,58,.22)}.fengli-case .section-label{margin:48px 0 14px;color:#d97944;font-size:14px;font-weight:800;letter-spacing:.08em}.fengli-case h2{margin:0;color:#2f6942;font-size:30px;letter-spacing:-1px}.fengli-case .section-intro{max-width:710px;margin:12px 0 0;color:#466651;font-size:16px;line-height:1.85}.fengli-case .problem-grid,.fengli-case .principle-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:22px}.fengli-case .case-card{padding:22px 20px;min-height:160px;border:1.5px solid #b7cfad;border-radius:18px;background:#fffdf7}.fengli-case .case-card b{display:block;margin-bottom:10px;color:#2f6942;font-size:17px}.fengli-case .case-card p{margin:0;color:#55705e;font-size:14px;line-height:1.75}.fengli-case .flow{display:grid;grid-template-columns:repeat(5,1fr);gap:0;margin-top:24px;border:1.5px solid #b7cfad;border-radius:18px;overflow:hidden;background:#fffdf7}.fengli-case .flow-step{position:relative;padding:22px 16px;min-height:155px;border-right:1.5px solid #b7cfad}.fengli-case .flow-step:last-child{border-right:0}.fengli-case .flow-no{display:block;margin-bottom:13px;color:#d97944;font-size:13px;font-weight:800}.fengli-case .flow-step b{display:block;color:#2f6942;font-size:16px}.fengli-case .flow-step p{margin:8px 0 0;color:#55705e;font-size:13px;line-height:1.6}.fengli-case .case-note{margin-top:28px;padding:20px 22px;border-left:5px solid #d97944;border-radius:0 15px 15px 0;background:#fff3e3;color:#5e533f;font-size:15px;line-height:1.8}.fengli-case .back-houses{display:inline-flex;align-items:center;gap:8px;margin-top:42px;padding:13px 17px;border-radius:999px;background:#2f6942;color:#fffdf5;text-decoration:none;font-weight:700}.fengli-case .back-houses:hover{background:#d97944}@media(max-width:760px){.fengli-case .case-wrap{padding:26px 16px 0}.fengli-case .case-hero{grid-template-columns:1fr;border-radius:21px}.fengli-case .case-hero-copy{padding:30px 24px}.fengli-case h1{font-size:40px}.fengli-case .case-hero-media{min-height:230px;order:-1}.fengli-case .problem-grid,.fengli-case .principle-grid{grid-template-columns:1fr}.fengli-case .flow{grid-template-columns:1fr}.fengli-case .flow-step{min-height:0;border-right:0;border-bottom:1.5px solid #b7cfad}.fengli-case .flow-step:last-child{border-bottom:0}}</style>
+<div class="case-wrap">
+  <a class="case-crumb" href="/personal-blog/works/">← 回到作品小屋</a>
+  <section class="case-hero" aria-labelledby="fengli-title">
+    <div class="case-hero-copy"><span class="case-kicker">微信小程序 · 生活方式产品</span><h1 id="fengli-title">风里约行</h1><p class="case-lead">把一段空闲时间，变成一次由自己掌控、也可以真实发生的城市出发。</p><div class="case-meta"><span>产品定义</span><span>路线与同行</span><span>低压力社交</span><span>体验版实现</span></div></div>
+    <div class="case-hero-media"><img src="/personal-blog/medias/projects/fengliyouyue-hero.jpg" alt="阳光下的城市公园步道"><span class="case-photo-note">从一个“想出去”的念头开始</span></div>
+  </section>
+  <p class="section-label">01 / 想解决的事</p><h2>不是缺一个攻略，而是缺一个能出发的开始。</h2><p class="section-intro">很多人并不是完全不知道去哪，只是在下班后或周末有一点空闲时，不想花很多力气规划，也不确定一个人去好不好、要不要找人同行。风里约行想把这份模糊的念头，接成一条轻一点、能落地的行动。</p>
+  <section class="problem-grid" aria-label="用户问题"><article class="case-card"><b>不知道怎么开始</b><p>有时间、有一点想出门的心情，却很难把它变成具体的地点、路线和安排。</p></article><article class="case-card"><b>路线只停在收藏</b><p>看过的攻略很多，但内容很难自然变成“我这周末真的要去”的个人计划。</p></article><article class="case-card"><b>同行不该有压力</b><p>想和人一起出发，但不需要泛社交、强匹配或没有边界的陌生人私聊。</p></article></section>
+  <p class="section-label">02 / 产品主链路</p><h2>从一个念头，到一段真的发生的出发。</h2><div class="flow" aria-label="产品流程"><article class="flow-step"><span class="flow-no">01</span><b>想到要出门</b><p>带着空闲时间、心情或一个模糊的想法进入。</p></article><article class="flow-step"><span class="flow-no">02</span><b>找一条路线</b><p>浏览精选路线，或让 AI 生成一份私人草稿。</p></article><article class="flow-step"><span class="flow-no">03</span><b>变成我的计划</b><p>采用路线后形成个人副本，再决定何时出发。</p></article><article class="flow-step"><span class="flow-no">04</span><b>自己去或同行</b><p>可以独自完成，也可以基于具体时间和地点发起邀约。</p></article><article class="flow-step"><span class="flow-no">05</span><b>留下一点记录</b><p>出发结束后，选择性地保存一段属于自己的生活轨迹。</p></article></div>
+  <p class="section-label">03 / 我在意的产品边界</p><h2>让用户出发，但不替用户做决定。</h2><section class="principle-grid" aria-label="产品原则"><article class="case-card"><b>用户始终有决定权</b><p>AI 路线、个人计划与生活记录默认私密；是否保存、公开、独自去或同行，都由用户决定。</p></article><article class="case-card"><b>路线和行动分开</b><p>路线可以被参考和采用，但真正的出发应是用户自己的计划，不会改动原始路线。</p></article><article class="case-card"><b>同行只服务一次出发</b><p>邀约必须有明确时间、地点、人数和节奏；私聊只对同一次邀约的成员开放。</p></article></section>
+  <aside class="case-note"><b>项目状态：</b>已完成产品结构、核心交互与微信小程序体验版实现。这个页面呈现的是产品思路与已完成的核心闭环，不把尚未验证的规模化效果写成结果。</aside>
+  <a class="back-houses" href="/personal-blog/works/">去作品小屋继续逛逛 →</a>
+</div></main>
 
 
     <footer class="page-footer bg-color">
