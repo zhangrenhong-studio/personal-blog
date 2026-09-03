@@ -96,3 +96,20 @@ body.dark,body.dark .bg-color,body.dark .page-footer,body.dark .sidenav{backgrou
   .navbar-fixed #navContainer>.nav-menu>li>a{display:flex!important;align-items:center!important;height:40px!important;line-height:40px!important}
   .navbar-fixed #navContainer>.sidenav-trigger{display:none!important}
 }
+
+/* 顶部导航第三版：取消标题胶囊，让标题与菜单在同一条基线上。 */
+.navbar-fixed{height:76px!important;box-shadow:0 5px 18px rgba(73,113,66,.07)!important}
+.navbar-fixed nav#headNav{height:76px!important;line-height:normal!important}
+.navbar-fixed #navContainer{height:76px!important;display:grid!important;grid-template-columns:1fr auto!important;align-items:center!important}
+.brand-logo,.navbar-fixed #navContainer>.brand-logo{height:76px!important;display:flex!important;align-items:center!important;position:static!important;margin:0!important}
+.brand-logo>a{height:auto!important;padding:0!important;border:0!important;border-radius:0!important;background:transparent!important;box-shadow:none!important}
+.brand-logo .logo-span{position:relative;display:inline-flex!important;align-items:center!important;height:34px!important;padding:0 0 1px!important;border-bottom:2px solid #b9d99f!important;font-size:1.12rem!important;font-weight:900!important;letter-spacing:.015em!important;color:#285f35!important;-webkit-text-fill-color:#285f35!important}
+@media(min-width:701px){
+  .navbar-fixed #navContainer>.nav-menu{height:76px!important;align-items:center!important;margin:0!important;justify-self:end!important;align-self:center!important}
+  .navbar-fixed #navContainer>.nav-menu>li{height:76px!important;display:flex!important;align-items:center!important}
+  .navbar-fixed #navContainer>.nav-menu>li>a{height:36px!important;line-height:36px!important;padding:0 13px!important;display:inline-flex!important;align-items:center!important;justify-content:center!important;border-radius:12px!important}
+}
+@media(max-width:700px){.navbar-fixed{height:64px!important}.navbar-fixed nav#headNav,.navbar-fixed #navContainer,.brand-logo,.navbar-fixed #navContainer>.brand-logo{height:64px!important}.brand-logo .logo-span{height:30px!important;font-size:1rem!important}}
+
+/* 公开作品集顶部不展示管理齿轮，避免干扰站点标题。 */
+#hermes-gear-btn{display:none!important}

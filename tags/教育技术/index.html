@@ -22,7 +22,7 @@
 
     <title>标签: 教育技术 | 小红的个人空间</title>
     <link rel="icon" type="image/png" href="/personal-blog/favicon.png">
-    
+
     <style>
         body{
             background-image: url();
@@ -44,7 +44,7 @@
 <link rel="stylesheet" type="text/css" href="/personal-blog/libs/animate/animate.min.css">
 <link rel="stylesheet" type="text/css" href="/personal-blog/libs/lightGallery/css/lightgallery.min.css">
 <link rel="stylesheet" type="text/css" href="/personal-blog/css/matery.css?v=20260703b">
-<link rel="stylesheet" type="text/css" href="/personal-blog/css/my.css?v=20260829-nav-layout">
+<link rel="stylesheet" type="text/css" href="/personal-blog/css/my.css?v=20260829-nav-v4">
 <link rel="stylesheet" type="text/css" href="/personal-blog/css/dark.css" media="none" onload="if(media!='all')media='all'">
 
 
@@ -56,7 +56,7 @@
 
 
 
-    
+
 
 
 
@@ -71,64 +71,59 @@
         <div id="navContainer" class="nav-wrapper container">
             <div class="brand-logo">
                 <a href="/personal-blog/" class="waves-effect waves-light">
-                    
+
                     <span class="logo-span">小红的个人空间</span>
                 </a>
             </div>
-            
+
 
 <a href="#" data-target="mobile-nav" class="sidenav-trigger button-collapse"><i class="fas fa-bars"></i></a>
 <ul class="right nav-menu">
-  
+
 <li class="hide-on-med-and-down nav-item">
-    
+
     <a href="/personal-blog/" class="waves-effect waves-light">
-      
+
       <i class="fas fa-home" style="zoom: 0.6;"></i>
-      
+
       <span>首页</span>
     </a>
-    
+
   </li>
-  
+
 <li class="hide-on-med-and-down nav-item">
-    
+
     <a href="/personal-blog/about" class="waves-effect waves-light">
-      
+
       <i class="fas fa-user-circle" style="zoom: 0.6;"></i>
-      
+
       <span>关于</span>
     </a>
-    
+
   </li>
-  
+
   <li class="hide-on-med-and-down nav-item">
-    
+
     <a href="/personal-blog/works" class="waves-effect waves-light">
-      
+
       <i class="fas fa-rocket" style="zoom: 0.6;"></i>
-      
+
       <span>作品</span>
     </a>
-    
+
   </li>
-  
-  
-  
-  
-  
+
+
+
+
+
 
 <li class="hide-on-med-and-down nav-item site-search-nav">
   <a href="#searchModal" class="modal-trigger waves-effect waves-light" title="搜索网站">
     <i class="fas fa-search" style="zoom: 0.68;"></i><span>搜索</span>
   </a>
 </li>
-  
-<li>
-    <a href="javascript:;" class="waves-effect waves-light" onclick="switchNightMode()" title="深色/浅色模式" >
-      <i id="sum-moon-icon" class="fas fa-sun" style="zoom: 0.85;"></i>
-    </a>
-  </li>
+
 
 </ul>
 
@@ -136,55 +131,55 @@
 <div id="mobile-nav" class="side-nav sidenav">
 
     <div class="mobile-head bg-color">
-        
+
         <div class="logo-name">小红的个人空间</div>
         <div class="logo-desc">
-            
+
             技术爱好者 | 内容创作者
-            
+
         </div>
     </div>
 
     <ul class="menu-list mobile-menu-list">
-        
+
 <li class="m-nav-item">
-	  
+
 		<a href="/personal-blog/" class="waves-effect waves-light">
-			
+
 			    <i class="fa-fw fas fa-home"></i>
-			
+
 			首页
 		</a>
-          
+
         </li>
-        
+
 <li class="m-nav-item">
-	  
-        
+
+
         <li class="m-nav-item">
-	  
+
 		<a href="/personal-blog/about" class="waves-effect waves-light">
-			
+
 			    <i class="fa-fw fas fa-user-circle"></i>
-			
+
 			关于
 		</a>
-          
+
         </li>
-        
+
 <li class="m-nav-item">
-	  
+
 		<a href="/personal-blog/works" class="waves-effect waves-light">
-			
+
 			    <i class="fa-fw fas fa-rocket"></i>
-			
+
 			作品
 		</a>
-          
-        </li>
-        
 
-        
+        </li>
+
+
+
 ";
                         }
                     });
@@ -207,17 +202,17 @@
 <div class="stars-con">
     <div id="stars"></div>
     <div id="stars2"></div>
-    <div id="stars3"></div>  
+    <div id="stars3"></div>
 </div>
 
 <script>
     function switchNightMode() {
         $('<div class="Cuteen_DarkSky"><div class="Cuteen_DarkPlanet"></div></div>').appendTo($('body')),
         setTimeout(function () {
-            $('body').hasClass('DarkMode') 
-            ? ($('body').removeClass('DarkMode'), localStorage.setItem('isDark', '0'), $('#sum-moon-icon').removeClass("fa-sun").addClass('fa-moon')) 
+            $('body').hasClass('DarkMode')
+            ? ($('body').removeClass('DarkMode'), localStorage.setItem('isDark', '0'), $('#sum-moon-icon').removeClass("fa-sun").addClass('fa-moon'))
             : ($('body').addClass('DarkMode'), localStorage.setItem('isDark', '1'), $('#sum-moon-icon').addClass("fa-sun").removeClass('fa-moon')),
-            
+
             setTimeout(function () {
             $('.Cuteen_DarkSky').fadeOut(1e3, function () {
                 $(this).remove()
@@ -242,42 +237,42 @@
     <script src="/personal-blog/libs/lightGallery/js/lightgallery-all.min.js"></script>
     <script src="/personal-blog/js/matery.js"></script>
 
-    
 
-    
-    
-    
+
+
+
+
 
     <!-- 雪花特效 -->
-    
+
 
     <!-- 鼠标星星特效 -->
-    
 
-    
+
+
 
     <!-- Baidu Analytics -->
 
     <!-- Baidu Push -->
 
-    
+
     <script src="/personal-blog/libs/others/clicklove.js" async="async"></script>
-    
-    
 
-    
 
-    
+
+
+
+
 
     <!--腾讯兔小巢-->
-    
-    
 
-    
 
-    
 
-    
+
+
+
+
+
 
 
 <script src="/personal-blog/js/admin-panel.js?v=12"></script>
