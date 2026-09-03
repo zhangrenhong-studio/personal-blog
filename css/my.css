@@ -74,7 +74,7 @@ html{color-scheme:light!important}
 body,body * ,body *::before,body *::after{color:#31543c!important;-webkit-text-fill-color:#31543c!important;text-shadow:none!important}
 /* 视觉强调仍用深绿和暖橙，但不使用白字；原本深底按钮改为浅色底。 */
 body a:hover,body button:hover{color:#285f35!important}
-.back-houses,.btn,.btn-floating,.waves-effect,.hermes-submit-btn,.hermes-edit-badge{background:#e5f2d5!important;border-color:#9fcf67!important;color:#285f35!important}
+.back-houses,.btn,.btn-floating,.waves-effect,.hermes-submit-btn,.hermes-edit-badge,.pasture-btn.primary,.pasture-btn.primary:hover,.back-top{background:#e5f2d5!important;border-color:#9fcf67!important;color:#285f35!important}
 /* 即使旧主题开关、浏览器缓存或第三方模板类被触发，也保持浅色背景和深色文字。 */
 body.dark,body.dark *{background-color:transparent!important;color:#31543c!important;-webkit-text-fill-color:#31543c!important}
 body.dark,body.dark .bg-color,body.dark .page-footer,body.dark .sidenav{background:#fffdf6!important}
