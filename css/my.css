@@ -87,3 +87,12 @@ body.dark,body.dark .bg-color,body.dark .page-footer,body.dark .sidenav{backgrou
 .brand-logo .logo-span{font-size:1.08rem!important;color:#285f35!important;-webkit-text-fill-color:#285f35!important;letter-spacing:.02em!important}
 .nav-menu{display:flex!important;align-items:center!important;height:74px!important}.nav-menu>li>a{margin:0 2px!important;background:transparent!important}.nav-menu>li>a:hover{background:#eff7e6!important}.nav-menu .site-search-nav>a{background:#f6f9ef!important}
 @media(max-width:700px){.navbar-fixed{height:70px!important}.navbar-fixed nav#headNav,.navbar-fixed #navContainer{height:64px!important;line-height:64px!important}.brand-logo>a{height:36px!important;padding:0 12px!important}.brand-logo .logo-span{font-size:.98rem!important}}
+
+/* 顶部导航布局修正：桌面端取消旧模板的浮动，标题和菜单保持一行。 */
+@media(min-width:701px){
+  .navbar-fixed #navContainer>.brand-logo{position:static!important;float:none!important;order:1!important;flex:0 0 auto!important;margin:0!important}
+  .navbar-fixed #navContainer>.nav-menu{position:static!important;float:none!important;order:3!important;display:flex!important;align-items:center!important;justify-content:flex-end!important;gap:2px!important;height:74px!important;line-height:74px!important;margin:0 0 0 auto!important;padding:0!important}
+  .navbar-fixed #navContainer>.nav-menu>li{float:none!important;height:74px!important;line-height:74px!important}
+  .navbar-fixed #navContainer>.nav-menu>li>a{display:flex!important;align-items:center!important;height:40px!important;line-height:40px!important}
+  .navbar-fixed #navContainer>.sidenav-trigger{display:none!important}
+}
