@@ -78,3 +78,12 @@ body a:hover,body button:hover{color:#285f35!important}
 /* 即使旧主题开关、浏览器缓存或第三方模板类被触发，也保持浅色背景和深色文字。 */
 body.dark,body.dark *{background-color:transparent!important;color:#31543c!important;-webkit-text-fill-color:#31543c!important}
 body.dark,body.dark .bg-color,body.dark .page-footer,body.dark .sidenav{background:#fffdf6!important}
+
+/* 顶部导航：用一条安静的奶油色栏把站点标题和导航收成同一层，不再显得突兀。 */
+.navbar-fixed{height:82px!important;background:#fffdf6!important;border-bottom:1px solid #dce9d3!important;box-shadow:0 6px 20px rgba(73,113,66,.08)!important}
+.navbar-fixed nav#headNav{height:74px!important;line-height:74px!important;background:#fffdf6!important;box-shadow:none!important}
+.navbar-fixed #navContainer{height:74px!important;display:flex!important;align-items:center!important;justify-content:space-between!important}
+.brand-logo{height:auto!important;line-height:1!important}.brand-logo>a{display:inline-flex!important;align-items:center!important;height:40px!important;padding:0 15px!important;border:1px solid #cfe5bd!important;border-radius:15px!important;background:#edf6df!important;box-shadow:0 3px 0 rgba(83,124,72,.08)!important}
+.brand-logo .logo-span{font-size:1.08rem!important;color:#285f35!important;-webkit-text-fill-color:#285f35!important;letter-spacing:.02em!important}
+.nav-menu{display:flex!important;align-items:center!important;height:74px!important}.nav-menu>li>a{margin:0 2px!important;background:transparent!important}.nav-menu>li>a:hover{background:#eff7e6!important}.nav-menu .site-search-nav>a{background:#f6f9ef!important}
+@media(max-width:700px){.navbar-fixed{height:70px!important}.navbar-fixed nav#headNav,.navbar-fixed #navContainer{height:64px!important;line-height:64px!important}.brand-logo>a{height:36px!important;padding:0 12px!important}.brand-logo .logo-span{font-size:.98rem!important}}
