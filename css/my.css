@@ -146,3 +146,7 @@ body{line-height:1.88!important}.pasture-lead,.pasture-trait p,.lazy-scene p,.ar
 
 /* 首页顶部：导航借用首屏草地渐变，不再像独立色块。 */
 body:has(#indexCard) .navbar-fixed{background:linear-gradient(155deg,#fff9e9 0%,#f4fae8 54%,#dff2c8 100%)!important;border-bottom:0!important;box-shadow:none!important}body:has(#indexCard) .navbar-fixed nav#headNav{background:transparent!important}
+
+/* 首页导航与分区节奏：实色草地导航，不做透明滑动；区块之间留出呼吸。 */
+body:has(#indexCard) .navbar-fixed,body:has(#indexCard) .navbar-fixed nav#headNav{background:#f4fae8!important;opacity:1!important;backdrop-filter:none!important;border-bottom:0!important;box-shadow:none!important}
+.pasture-intro{margin:104px auto 96px!important}.lazy-scenes{margin:0 auto 96px!important}.sheep-portfolio{margin:104px auto 112px!important}@media(max-width:700px){.pasture-intro{margin:76px auto 70px!important}.lazy-scenes{margin:0 auto 72px!important}.sheep-portfolio{margin:78px auto 82px!important}}
