@@ -192,7 +192,7 @@ a[href="#searchModal"],.site-search-nav,nav .nav-menu .site-search-nav,#searchMo
 /* 小红的草地光标：仅桌面精细指针启用，触屏与无障碍偏好保持系统光标。 */
 @media (hover: hover) and (pointer: fine) {
   html, body, body * {
-    cursor: url("/personal-blog/medias/cursor-avatar.png") 4 4, auto;
+    cursor: url("/personal-blog/medias/cursor-sprout.png") 4 4, auto;
   }
 
   a, button, [role="button"], input[type="button"], input[type="submit"], input[type="reset"],
