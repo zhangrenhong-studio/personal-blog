@@ -189,3 +189,22 @@ body:has(#indexCard) .navbar-fixed,body:has(#indexCard) .navbar-fixed nav#headNa
 a[href="#searchModal"],.site-search-nav,nav .nav-menu .site-search-nav,#searchModal{display:none!important}
 
 
+
+
+/* 宽屏桌面：避免 2K/4K 显示器仍沿用笔记本的窄版首屏。 */
+@media (min-width: 1280px) {
+  .pasture-home { min-height: clamp(650px, 74vh, 860px); padding: clamp(96px, 8vh, 132px) 48px clamp(110px, 10vh, 158px); }
+  .pasture-container { max-width: min(88vw, 1440px); grid-template-columns: 1.08fr .92fr; gap: clamp(48px, 6vw, 108px); }
+  .pasture-copy h1 { font-size: clamp(4.7rem, 5.2vw, 6.15rem); max-width: 680px; }
+  .pasture-lead { max-width: 540px; font-size: 1.16rem; line-height: 1.75; }
+  .pasture-portrait-wrap { min-height: clamp(390px, 34vw, 520px); }
+  .pasture-sun { width: clamp(340px, 25vw, 440px); height: clamp(340px, 25vw, 440px); }
+  .pasture-avatar-ring { width: clamp(348px, 25vw, 448px); height: clamp(348px, 25vw, 448px); padding: 15px; }
+  .pasture-energy-card { width: clamp(128px, 9.2vw, 164px); right: 2%; bottom: 6%; }
+}
+
+@media (min-width: 1680px) {
+  .pasture-intro, .lazy-scenes, .sheep-portfolio { max-width: 1380px; }
+  .pasture-traits { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+  .house-village { gap: 66px 36px; }
+}
