@@ -187,3 +187,24 @@ body:has(#indexCard) .navbar-fixed,body:has(#indexCard) .navbar-fixed nav#headNa
 
 /* 当前作品集内容较少：关闭全站搜索入口与搜索弹窗。 */
 a[href="#searchModal"],.site-search-nav,nav .nav-menu .site-search-nav,#searchModal{display:none!important}
+
+
+/* 小红的草地光标：仅桌面精细指针启用，触屏与无障碍偏好保持系统光标。 */
+@media (hover: hover) and (pointer: fine) {
+  html, body, body * {
+    cursor: url("/personal-blog/medias/cursor-avatar.png") 4 4, auto;
+  }
+
+  a, button, [role="button"], input[type="button"], input[type="submit"], input[type="reset"],
+  .waves-effect, .sidenav-trigger, .carousel-control, select, summary {
+    cursor: url("/personal-blog/medias/cursor-spark.png") 12 12, pointer;
+  }
+
+  input[type="text"], input[type="search"], input[type="email"], input[type="password"], textarea, [contenteditable="true"] {
+    cursor: text;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html, body, body * { cursor: auto; }
+}
